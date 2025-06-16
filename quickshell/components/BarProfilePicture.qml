@@ -25,6 +25,8 @@ Rectangle {
   Image {
     anchors.fill: parent
     source: `file:///home/${username}/.face.jpg`
+    sourceSize.width: 55
+    sourceSize.height: 55
     fillMode: Image.PreserveAspectCrop
     scale: 1.0
 
