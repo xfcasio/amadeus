@@ -45,13 +45,12 @@ Scope {
 		active: root.shouldShowOsd
 
 		PanelWindow {
-
 			anchors.bottom: true
 			margins.bottom: screen.height / 12
 
 			implicitWidth: 200
 			implicitHeight: 36
-			color: "transparent"
+      color: "transparent"
 
 			// An empty click mask prevents the window from blocking mouse events.
       //mask: Region {}
@@ -77,6 +76,9 @@ Scope {
 				radius: 4
 				color: "#111A1F"
 				
+        border.width: 3
+        border.color: "#171F24"
+
 				property real yOffset: 100
 				
 				transform: [
