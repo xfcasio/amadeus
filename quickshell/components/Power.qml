@@ -27,5 +27,7 @@ Rectangle {
     width: 16
     height: 16
     source: `file:///home/${username}/.config/quickshell/svg/power.svg`
+    sourceSize.width: 26
+    sourceSize.height: 26
   }
 }

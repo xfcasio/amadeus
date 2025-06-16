@@ -149,6 +149,8 @@ Rectangle {
         width: 23
         height: 23
         source: `file:///home/${username}/.config/quickshell/svg/${internetModule.internetConnected ? 'connected' : 'disconnected'}.svg`
+        sourceSize.width: 30
+        sourceSize.height: 30
       }
     }
   }

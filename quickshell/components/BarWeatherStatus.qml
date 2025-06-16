@@ -53,6 +53,8 @@ Rectangle {
         width: 20
         height: 20
         source: `file:///home/${username}/.config/quickshell/svg/weather.svg`
+        sourceSize.width: 36
+        sourceSize.height: 36
       }
     }
 

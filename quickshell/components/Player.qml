@@ -154,7 +154,9 @@ Rectangle {
       anchors.centerIn: parent
       width: 14
       height: 14
-      source: `file:///home/${username}/.config/quickshell/svg/headphones.svg`
+      source: `file:///home/${username}/.config/quickshell/svg/${playing ? 'pause' : 'play'}.svg`
+      sourceSize.width: 30
+      sourceSize.height: 30
     }
   }
 }
