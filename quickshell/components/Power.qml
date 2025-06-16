@@ -18,6 +18,9 @@ Rectangle {
   width: 28
   radius: innerModulesRadius
   color: "#171A20"
+  
+  border.width: 1
+  border.color: "#171F24"
 
   Image {
     anchors.centerIn: parent

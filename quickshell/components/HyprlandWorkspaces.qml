@@ -18,6 +18,9 @@ Rectangle {
   radius: 2
   color: "#111A1F"
 
+  border.width: 1
+  border.color: "#171F24"
+
   ColumnLayout {
     anchors.centerIn: parent
     spacing: 3

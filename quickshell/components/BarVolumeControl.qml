@@ -18,6 +18,9 @@ Rectangle {
   radius: innerModulesRadius
   color: "#111A1F"
 
+  border.width: 1
+  border.color: "#171F24"
+
   readonly property PwNode sink: Pipewire.defaultAudioSink
 
   property bool muted: sink?.audio?.muted ?? false

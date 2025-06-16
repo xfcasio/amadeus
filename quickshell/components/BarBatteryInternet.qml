@@ -18,6 +18,9 @@ Rectangle {
   color: "#111A1F"
   radius: innerModulesRadius
 
+  border.width: 1
+  border.color: "#171F24"
+
   ColumnLayout {
     anchors.centerIn: parent
     spacing: 0
@@ -25,7 +28,7 @@ Rectangle {
     // Battery Module
     QtObject {
       id: batteryModule
-      property real batteryLevel: 0
+      property real batteryLevel: 100
 
       function getBatteryColor(percent) {
         if (percent === 100) return "#78B8a2"
@@ -84,10 +87,9 @@ Rectangle {
             border.width: 2
 
             Rectangle {
-              anchors.centerIn: parent
               anchors.bottom: parent.bottom
               anchors.horizontalCenter: parent.horizontalCenter
-              anchors.bottomMargin: 2
+              anchors.bottomMargin: 3
               anchors.leftMargin: 2
               anchors.rightMargin: 2
               width: parent.width - 6

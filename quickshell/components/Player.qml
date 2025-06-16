@@ -20,6 +20,9 @@ Rectangle {
   radius: innerModulesRadius
   color: "#111A1F"
 
+  border.width: 1
+  border.color: "#171F24"
+
   property bool playing: false
   property string artUrl: ''
 
