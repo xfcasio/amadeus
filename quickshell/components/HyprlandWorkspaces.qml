@@ -35,7 +35,7 @@ Rectangle {
           required property var modelData
           property bool hovered: false
 
-          width: 5
+          width: 8
           Layout.preferredHeight: modelData.active ? 40 : 10
           radius: 1
 
