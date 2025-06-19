@@ -145,18 +145,18 @@ Rectangle {
   Rectangle {
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.bottom: parent.bottom
-    anchors.bottomMargin: 2
-    height: 24
+    anchors.bottomMargin: 1
+    height: 26
     radius: playerModule.radius
     color: "#111A1F"
 
     Image {
       anchors.centerIn: parent
-      width: 14
-      height: 14
-      source: `file:///home/${username}/.config/quickshell/svg/${playing ? 'pause' : 'play'}.svg`
-      sourceSize.width: 30
-      sourceSize.height: 30
+      width: 18
+      height: 18
+      source: `file:///home/${username}/.config/quickshell/svg/headphones.svg`
+      sourceSize.width: 36
+      sourceSize.height: 36
     }
   }
 }
