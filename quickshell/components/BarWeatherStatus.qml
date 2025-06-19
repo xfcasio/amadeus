@@ -26,7 +26,7 @@ Rectangle {
   Process {
     id: weatherProcess
     running: true
-    command: [ "curl", "-s", "wttr.in/?format=%t" ]
+    command: [ "curl", "-s", "https://wttr.in/?format=%t" ]
 
     stdout: SplitParser {
       onRead: temp => { temperature = parseFloat(temp.replace(/[^\d.-]/g, '')); }
