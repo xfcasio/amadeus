@@ -52,4 +52,8 @@ else:
     print('you must pick either --laptop or --hdmi')
     exit(1)
 
-if args.reload: os.system('hyprctl reload')
+if args.reload:
+    os.system('hyprctl reload')
+    os.system('killall quickshell')
+    os.system('killall qs')
+    os.system('quickshell &disown')
