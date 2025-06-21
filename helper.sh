@@ -67,7 +67,7 @@ dots-install::neofetch() {
 
 dots-install::matrix-iamb() {
   echo "* creating iamb config symbolic links"
-  ln -fs "$HERE/iamb" "/home/$USER/.config/"
+  cp -r "$HERE/iamb" "/home/$USER/.config/"
 }
 
 dots-install::fonts() {
