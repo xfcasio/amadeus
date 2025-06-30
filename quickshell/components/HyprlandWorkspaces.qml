@@ -13,6 +13,7 @@ import Qt5Compat.GraphicalEffects
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
+  anchors.horizontalCenter: parent.horizontalCenter
   implicitHeight: childrenRect.height + 36
   width: 24
   radius: 2
@@ -35,11 +36,11 @@ Rectangle {
           required property var modelData
           property bool hovered: false
 
-          width: 8
+          width: 4
           Layout.preferredHeight: modelData.active ? 40 : 10
           radius: 1
 
-          color: (modelData.active || hovered) ? "#BE7E78" : "#333B3F"
+          color: (modelData.active || hovered) ? "#A9A9A9" : "#333B3F"
 
           Behavior on Layout.preferredHeight {
             NumberAnimation {

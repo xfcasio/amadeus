@@ -11,7 +11,7 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-vim.o.shell = "zsh"
+vim.o.shell = "fish"
 
 local lazy_config = require "configs.lazy"
 
@@ -78,6 +78,7 @@ lspconfig.rust_analyzer.setup({
     ["rust-analyzer"] = {
       cargo = {
         allFeatures = true, -- Enable all features for analysis
+--        target = "x86_64-os.json"
       },
       diagnostics = {
         enable = true,

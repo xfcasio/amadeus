@@ -38,6 +38,12 @@ dots-install::zsh() {
   ln -fs "$HERE/zshrc" "/home/$USER/.zshrc"
 }
 
+dots-install::fish() {
+  echo "* creating fish symbolic link"
+  mkdir -p ~/.config/fish
+  ln -fs "$HERE/config.fish" "/home/$USER/.config/fish/"
+}
+
 dots-install::nushell() {
   echo "* creating nushell symbolic link"
   mkdir -p "/home/$USER/.config/nushell"

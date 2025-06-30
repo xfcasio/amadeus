@@ -18,7 +18,7 @@ $DEBUG \
   SUDO=$(which doas 2> /dev/null)
   [ $? -eq 1 ] && SUDO=sudo
   
-  HYPR_WALL="$HERE/Wallpapers/GMK-Pono.png"
+  HYPR_WALL="$HERE/Wallpapers/fuji.png"
   
   # NOTE: #######################################################
   #  for the bar to actually display your profile picture,      #
@@ -30,9 +30,10 @@ $DEBUG \
   dots-install::wallpaper $HYPR_WALL    # installed to hyprland's default wall0.png (installed to /usr/share/hypr)
   dots-install::profile-picture         # symlink face.jpg -> ~/.face.jpg (or put your own)
   dots-install::quickshell              # install my quickshell (for bar and widgets)
-#  dots-install::fabric                 # isntall my fabric configuration for my bar and widgets
-  dots-install::zsh                     # install my zsh configuration to ~/.zshrc
+# dots-install::fabric                  # isntall my fabric configuration for my bar and widgets
+# dots-install::zsh                     # install my zsh configuration to ~/.zshrc
 # dots-install::nushell                 # install my nushell configuration to ~/.config/nushell/
+  dots-install::fish                    # install my fish configuration to ~/.config/fish/config.fish
   dots-install::neovim                  # install my neovim configuration
   dots-install::applications            # install configs for rofi, alacritty, kitty, vencord
   dots-install::neofetch                # install neofetch config

@@ -81,17 +81,17 @@ return {
     enabled = false
   },
 
-  {
-    "IogaMaster/neocord",
-    event = "VeryLazy",
-    config = {
-      main_image = "language",
-      show_time = true,
-      workspace_text = function()
-        return "doing something"
-      end,
-    },
-  },
+--  {
+--    "IogaMaster/neocord",
+--    event = "VeryLazy",
+--    config = {
+--      main_image = "language",
+--      show_time = true,
+--      workspace_text = function()
+--        return "doing something"
+--      end,
+--    },
+--  },
 
   {
     "nvzone/typr",

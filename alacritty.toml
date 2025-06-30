@@ -378,7 +378,7 @@ save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
 
 [terminal.shell]
-program = "zsh"
+program = "fish"
 
 [window]
 decorations = "buttonless"

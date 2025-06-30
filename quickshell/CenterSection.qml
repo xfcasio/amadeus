@@ -19,6 +19,7 @@ Rectangle {
 
   ColumnLayout {
     anchors.horizontalCenter: parent.horizontalCenter
+    anchors.verticalCenter: parent.verticalCenter
     Layout.fillHeight: true
     Layout.fillWidth: true
     spacing: 6
