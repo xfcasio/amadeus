@@ -1,4 +1,12 @@
 [build]
 jobs = 16
-target-dir = "/home/toji/.target"
+target-dir = "~/.target"
+
+[target.x86_64-unknown-linux-gnu]
 rustflags = ["-C", "target-cpu=native", "-C", "link-args=-fuse-ld=mold"]
+
+[target.'cfg(target_os = "none")']
+rustflags = []
+
+[cargo-new]
+vcs = "none"

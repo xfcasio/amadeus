@@ -1,5 +1,8 @@
 # Fish configuration converted from zsh
 
+bind \e\[A history-prefix-search-backward
+bind \e\[B history-prefix-search-forward
+
 # Environment variables
 set -x EDITOR nvim
 set -x MANPAGER 'nvim +Man!'
