@@ -1,6 +1,6 @@
 [build]
 jobs = 16
-target-dir = "~/.target"
+target-dir = "/home/toji/.target"
 
 [target.x86_64-unknown-linux-gnu]
 rustflags = ["-C", "target-cpu=native", "-C", "link-args=-fuse-ld=mold"]

@@ -9,8 +9,10 @@ set -x MANPAGER 'nvim +Man!'
 set -x RUSTC_WRAPPER sccache
 
 # Add to PATH
-fish_add_path $HOME/.cargo/bin
+fish_add_path /usr/sbin
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.cargo/bin
+fish_add_path $HOME/.nix-profile/bin
 
 # FZF configuration
 set -x FZF_CTRL_T_COMMAND "eza --icons"

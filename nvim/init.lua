@@ -66,7 +66,7 @@ require("nvim-tree").setup({
 local lspconfig = require "lspconfig"
 
 -- Enable ccls for C/C++
--- lspconfig.ccls.setup{}
+lspconfig.clangd.setup{}
 
 -- Enable rust-analyzer for Rust
 lspconfig.rust_analyzer.setup({
@@ -104,6 +104,8 @@ vim.diagnostic.config({
     severity = { min = vim.diagnostic.severity.ERROR }
   },
 })
+
+vim.treesitter.language.register('c', 'cpp')
 
 vim.cmd("set numberwidth=4")
 vim.cmd("set relativenumber")
