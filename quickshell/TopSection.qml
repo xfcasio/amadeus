@@ -101,7 +101,7 @@ Rectangle {
 
       ColumnLayout {
         anchors.centerIn: parent
-        spacing: 4
+        spacing: 2
 
         // CPU indicator
         Components.RadialIndicator {
@@ -109,7 +109,7 @@ Rectangle {
           percent: cpuUsage
           indicatorColor: "#DF5B61"
           backgroundColor: "#333B3F"
-          size: 22
+          size: 24
         }
 
         // RAM indicator
@@ -118,7 +118,7 @@ Rectangle {
           percent: ramUsage
           indicatorColor: "#78B892"
           backgroundColor: "#333B3F"
-          size: 22
+          size: 24
         }
       }
     }

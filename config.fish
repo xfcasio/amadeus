@@ -62,14 +62,14 @@ function fish_prompt
     set -l brack_color (set_color '#53595f')
     set -l user_color (set_color '#78B892')
     set -l host_color (set_color '#C488EC')
-    set -l cwd_color (set_color '#79AAEB')
+    set -l cwd_color (set_color '#5F87D7')
     set -l reset (set_color normal)
     
     # Build prompt
-    set -l prompt_bg (set_color -b '#6791C9')
+    set -l prompt_bg (set_color -b '#5F87D7')
     set -l prompt_fg (set_color '#12171d')
     set -l second_bg (set_color -b '#333B3F')
-    set -l second_fg (set_color '#6791C9')
+    set -l second_fg (set_color '#5F87D7')
     
     echo -n $prompt_bg$prompt_fg' skin crawler '$second_bg$second_fg' '
     echo -n (prompt_pwd)

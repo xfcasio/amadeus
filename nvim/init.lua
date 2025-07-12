@@ -66,7 +66,13 @@ require("nvim-tree").setup({
 local lspconfig = require "lspconfig"
 
 -- Enable ccls for C/C++
-lspconfig.clangd.setup{}
+lspconfig.clangd.setup{
+  cmd = { "clangd", "--completion-style=detailed" },
+  init_options = {
+    clangdFileStatus = true,
+    --fallbackFlags = { "-std=c++20" }
+  }
+}
 
 -- Enable rust-analyzer for Rust
 lspconfig.rust_analyzer.setup({
@@ -78,7 +84,6 @@ lspconfig.rust_analyzer.setup({
     ["rust-analyzer"] = {
       cargo = {
         allFeatures = true, -- Enable all features for analysis
---        target = "x86_64-os.json"
       },
       diagnostics = {
         enable = true,
