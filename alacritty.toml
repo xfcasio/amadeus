@@ -46,10 +46,10 @@ print_events = false
 render_timer = false
 
 [font]
-size = 8.3
+size = 9
 
 [font.bold]
-family = "Terminus"
+family = "fxd"
 #family = "Cartograph CF"
 style = "Bold"
 
@@ -58,11 +58,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Terminus"
+family = "fxd"
 style = "Italic"
 
 [font.normal]
-family = "Terminus"
+family = "fxd"
 style = "Regular"
 
 [font.offset]
