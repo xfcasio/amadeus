@@ -3,7 +3,7 @@
         <img src="https://img.shields.io/badge/WM-Hyprland-blue?colorA=00070B&colorB=F26E74&style=for-the-badge" />
         <img src="https://img.shields.io/badge/BAR-Quickshell-blue?colorA=00070B&colorB=78B8A2&style=for-the-badge" />
         <img src="https://img.shields.io/badge/EDITOR-Neovim-blue?colorA=00070B&colorB=C488EC&style=for-the-badge" />
-        <img src="https://img.shields.io/badge/SHELL-ZSH-blue?colorA=00070B&colorB=6791C9&style=for-the-badge" /> <br>
+        <img src="https://img.shields.io/badge/SHELL-FISH-blue?colorA=00070B&colorB=6791C9&style=for-the-badge" /> <br>
         <h4 align="center"> my personal desktop made with hyprland and quickshell </h4>
 </p>
 
