@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-APP=$(pass ls | tail -"$(( $(pass ls | wc -l) - 1))" | awk '{ print $2 }' | rofi -dmenu)
+APP=$(pass ls | tail -"$(( $(pass ls | wc -l) - 1))" | awk '{ print $2 }' | awk '{ gsub(/\033\[[0-9;]*[mK]/, ""); print }' | rofi -dmenu)
 
 [[ $? == 0 ]] || exit 1
 
