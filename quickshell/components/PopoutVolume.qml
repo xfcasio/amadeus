@@ -9,6 +9,7 @@ Scope {
   id: root
 
   property string username: ""
+  property real lastVolume: 0
 
   Process {
     command: ["whoami"]
@@ -19,41 +20,85 @@ Scope {
   readonly property PwNode sink: Pipewire.defaultAudioSink
   property bool muted: sink?.audio?.muted ?? false
   property real volume: sink?.audio?.volume ?? 0
-	property bool shouldShowOsd: false
+  property bool shouldShowOsd: false
 
-	// Bind the pipewire node so its volume will be tracked
-	PwObjectTracker {
-		objects: [ Pipewire.defaultAudioSink ]
-	}
+  // Bind the pipewire node so its volume will be tracked
+  PwObjectTracker {
+    objects: [ Pipewire.defaultAudioSink ]
+  }
 
-	Connections {
-		target: Pipewire.defaultAudioSink?.audio
+  Connections {
+    target: Pipewire.defaultAudioSink?.audio
 
-		function onVolumeChanged() {
-			root.shouldShowOsd = true;
-			hideTimer.restart();
-		}
-	}
+    function onVolumeChanged() {
+      root.shouldShowOsd = true;
+      hideTimer.restart();
+    }
+  }
 
-	Timer {
-		id: hideTimer
-		interval: 1000
-		onTriggered: root.shouldShowOsd = false
-	}
+  Timer {
+    id: hideTimer
+    interval: 1000
+    onTriggered: root.shouldShowOsd = false
+  }
 
-	LazyLoader {
-		active: root.shouldShowOsd
+  onVolumeChanged: {
+    if (Math.abs(volume - lastVolume) > 0.01) {
+      bounceAnimation.start()
+      lastVolume = volume
+    }
+  }
 
-		PanelWindow {
-			anchors.bottom: true
-			margins.bottom: screen.height / 12
+  SequentialAnimation {
+    id: bounceAnimation
+    PropertyAnimation {
+      target: popoutVolume.item
+      property: "anchors.bottomMargin"
+      to: -8
+      duration: 120
+      easing.type: Easing.OutBack
+    }
+    PropertyAnimation {
+      target: popoutVolume.item
+      property: "anchors.bottomMargin"
+      to: 10
+      duration: 180
+      easing.type: Easing.InOutBounce
+    }
+    PropertyAnimation {
+      target: popoutVolume.item
+      property: "anchors.bottomMargin"
+      to: -4
+      duration: 140
+      easing.type: Easing.OutBounce
+    }
+    PropertyAnimation {
+      target: popoutVolume.item
+      property: "anchors.bottomMargin"
+      to: 6
+      duration: 100
+      easing.type: Easing.InOutQuad
+    }
+    PropertyAnimation {
+      target: popoutVolume.item
+      property: "anchors.bottomMargin"
+      to: 0
+      duration: 160
+      easing.type: Easing.OutElastic
+    }
+  }
 
-			implicitWidth: 200
-			implicitHeight: 36
+  LazyLoader {
+    id: popoutVolume
+    active: root.shouldShowOsd
+
+    PanelWindow {
+      anchors.bottom: true
+      margins.bottom: screen.height / 12
+
+      implicitWidth: 200
+      implicitHeight: 36
       color: "transparent"
-
-			// An empty click mask prevents the window from blocking mouse events.
-      //mask: Region {}
 
       MouseArea {
         anchors.fill: parent
@@ -70,131 +115,108 @@ Scope {
         }
       }
 
-			Rectangle {
-				id: mainRect
-				anchors.fill: parent
-				radius: 4
-				color: "#111A1F"
-				
+      Rectangle {
+        id: mainRect
+        anchors.fill: parent
+        radius: 4
+        color: "#111A1F"
+
         border.width: 3
         border.color: "#171F24"
 
-				property real yOffset: 100
-				
-				transform: [
-					Scale {
-						id: scaleTransform
-						origin.x: mainRect.width / 2
-						origin.y: mainRect.height / 2
-						xScale: 0.4
-						yScale: 0.4
-					},
-					Translate {
-						id: translateTransform
-						y: mainRect.yOffset
-					}
-				]
-				
-				// Slide up and grow animation
-				ParallelAnimation {
-					id: slideUpAndGrow
-					running: root.shouldShowOsd
-					
-					// Slide up from bottom
-					PropertyAnimation {
-						target: mainRect
-						property: "yOffset"
-						from: 100
-						to: 0
-						duration: 400
-						easing.type: Easing.OutBack
-					}
-					
-					// Grow while sliding
-					PropertyAnimation {
-						target: scaleTransform
-						properties: "xScale,yScale"
-						from: 0.4
-						to: 1.0
-						duration: 400
-						easing.type: Easing.OutBack
-					}
-				}
-				
-				SequentialAnimation {
-					id: endWiggle
-					running: slideUpAndGrow.running === false && root.shouldShowOsd
-					
-					PauseAnimation { duration: 50 }
-					
-					SequentialAnimation {
-						loops: 2
-						PropertyAnimation {
-							target: scaleTransform
-							properties: "xScale,yScale"
-							to: 1.05
-							duration: 100
-							easing.type: Easing.InOutSine
-						}
-						PropertyAnimation {
-							target: scaleTransform
-							properties: "xScale,yScale"
-							to: 1.0
-							duration: 100
-							easing.type: Easing.InOutSine
-						}
-					}
-				}
-				
-				// Exit animation - slide back down and shrink
-				ParallelAnimation {
-					id: slideDownAndShrink
-					running: !root.shouldShowOsd && mainRect.visible
-					
-					PropertyAnimation {
-						target: mainRect
-						property: "yOffset"
-						to: 100
-						duration: 300
-						easing.type: Easing.InBack
-					}
-					
-					PropertyAnimation {
-						target: scaleTransform
-						properties: "xScale,yScale"
-						to: 0.4
-						duration: 300
-						easing.type: Easing.InBack
-					}
-				}
+        property real yOffset: 0
 
-				RowLayout {
-					anchors {
-						fill: parent
-						leftMargin: 10
-						rightMargin: 15
-					}
+        transform: [
+          Scale {
+            id: scaleTransform
+            origin.x: mainRect.width / 2
+            origin.y: mainRect.height / 2
+            xScale: root.shouldShowOsd ? 1.0 : 0.4
+            yScale: root.shouldShowOsd ? 1.0 : 0.4
 
-					IconImage {
-						implicitSize: 20
-						source: `file:///home/${username}/.config/quickshell/svg/${muted ? 'speaker-dark' : 'speaker'}.svg`
+            Behavior on xScale {
+              PropertyAnimation {
+                duration: root.shouldShowOsd ? 400 : 300
+                easing.type: root.shouldShowOsd ? Easing.OutBack : Easing.InBack
+              }
+            }
+
+            Behavior on yScale {
+              PropertyAnimation {
+                duration: root.shouldShowOsd ? 400 : 300
+                easing.type: root.shouldShowOsd ? Easing.OutBack : Easing.InBack
+              }
+            }
+          },
+          Translate {
+            id: translateTransform
+            y: root.shouldShowOsd ? 0 : 100
+
+            Behavior on y {
+              PropertyAnimation {
+                duration: root.shouldShowOsd ? 400 : 300
+                easing.type: root.shouldShowOsd ? Easing.OutBack : Easing.InBack
+              }
+            }
+          }
+        ]
+
+        SequentialAnimation {
+          id: endWiggle
+          running: false
+
+          PauseAnimation { duration: 450 }
+
+          SequentialAnimation {
+            loops: 2
+            PropertyAnimation {
+              target: scaleTransform
+              properties: "xScale,yScale"
+              to: 1.05
+              duration: 100
+              easing.type: Easing.InOutSine
+            }
+            PropertyAnimation {
+              target: scaleTransform
+              properties: "xScale,yScale"
+              to: 1.0
+              duration: 100
+              easing.type: Easing.InOutSine
+            }
+          }
+        }
+
+        onVisibleChanged: {
+          if (visible && root.shouldShowOsd) {
+            endWiggle.start()
+          }
+        }
+
+        RowLayout {
+          anchors {
+            fill: parent
+            leftMargin: 10
+            rightMargin: 15
+          }
+
+          IconImage {
+            implicitSize: 20
+            source: `file:///home/${username}/.config/quickshell/svg/${muted ? 'speaker-dark' : 'speaker'}.svg`
             opacity: muted ? 0.6 : 1.0
-					}
+          }
 
           Rectangle {
             color: "#333B3F"
-						Layout.fillWidth: true
-
-						implicitHeight: 10
+            Layout.fillWidth: true
+            implicitHeight: 10
             radius: 2
 
             Rectangle {
               radius: 2
-//              color: "#BE7E78"
-							anchors {
-								left: parent.left
-								top: parent.top
-								bottom: parent.bottom
+              anchors {
+                left: parent.left
+                top: parent.top
+                bottom: parent.bottom
               }
               gradient: Gradient {
                 orientation: Gradient.Horizontal
@@ -202,14 +224,21 @@ Scope {
                 GradientStop { position: 1; color: "#BC83E3" }
               }
 
-              implicitWidth: {
+              width: {
                 let len = muted ? 1 : parent.width * (Pipewire.defaultAudioSink?.audio.volume ?? 0);
-                return (len > parent.width) ? parent.width : len;
+                return Math.min(len, parent.width);
               }
-						}
-					}
-				}
-			}
-		}
-	}
+
+              Behavior on width {
+                PropertyAnimation {
+                  duration: 150
+                  easing.type: Easing.OutQuad
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
