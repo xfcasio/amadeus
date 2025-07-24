@@ -7,6 +7,7 @@ bind \e\[B history-prefix-search-forward
 set -x EDITOR nvim
 set -x MANPAGER 'nvim +Man!'
 set -x RUSTC_WRAPPER sccache
+set -x TERM 'xterm-256color'
 
 # Add to PATH
 fish_add_path /usr/sbin
