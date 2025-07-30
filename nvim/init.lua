@@ -70,7 +70,7 @@ lspconfig.clangd.setup{
   cmd = { "clangd", "--completion-style=detailed" },
   init_options = {
     clangdFileStatus = true,
-    --fallbackFlags = { "-std=c++20" }
+    fallbackFlags = {}
   }
 }
 

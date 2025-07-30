@@ -87,6 +87,7 @@ Rectangle {
             border.width: 2
 
             Rectangle {
+              id: batteryFill
               anchors.bottom: parent.bottom
               anchors.horizontalCenter: parent.horizontalCenter
               anchors.bottomMargin: 3
@@ -95,7 +96,19 @@ Rectangle {
               width: parent.width - 6
               height: Math.max(0, (parent.height - 6) * (batteryModule.batteryLevel / 100))
               radius: 1
-              color: batteryModule.getBatteryColor(batteryModule.batteryLevel)
+
+              gradient: Gradient {
+                GradientStop {
+                  position: 0.0
+                  color: batteryModule.getBatteryColor(batteryModule.batteryLevel)
+                }
+                GradientStop {
+                  position: 1.0
+                  color: batteryModule.batteryLevel >= 90
+                    ? "#6791C9"
+                    : batteryModule.getBatteryColor(batteryModule.batteryLevel)
+                }
+              }
             }
           }
         }
