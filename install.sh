@@ -18,16 +18,22 @@ $DEBUG \
   SUDO=$(which doas 2> /dev/null)
   [ $? -eq 1 ] && SUDO=sudo
   
-  HYPR_WALL="$HERE/Wallpapers/cherry-blossom.png"
+  HYPR_WALL="$HERE/Wallpapers/lake.png"
   
   # NOTE: #######################################################
-  #  for the bar to actually display your profile picture,      #
-  #  make sure to put your JPEG profile picture in ~/.face.jpg  #
-  ############################################################# #
+  #  * many components assume the amadeus repo is located       #
+  #    at "~/amadeus". please either clone it there or          #
+  #    modify the configs accordingly.                          #
+  #                                                             #
+  #  * also, for the bar to actually display your profile       #
+  #    picture, make sure to put your JPEG profile              #
+  #    picture in ~/.face.jpg                                   #
+  ###############################################################
   
   # Comment out what you need not be installed:
   dots-install::hyprland                # wm
-  dots-install::wallpaper $HYPR_WALL    # installed to hyprland's default wall0.png (installed to /usr/share/hypr)
+  dots-install::amadeus-wallpapers      # clone amadeus-wallpapers repository to ~/amadeus/Wallpapers
+  dots-install::wallpaper $HYPR_WALL    # installed to hyprland's default wall0.png (in /usr/share/hypr)
   dots-install::profile-picture         # symlink face.jpg -> ~/.face.jpg (or put your own)
   dots-install::quickshell              # install my quickshell (for bar and widgets)
 # dots-install::fabric                  # isntall my fabric configuration for my bar and widgets

@@ -70,7 +70,11 @@ lspconfig.clangd.setup{
   cmd = { "clangd", "--completion-style=detailed" },
   init_options = {
     clangdFileStatus = true,
-    fallbackFlags = {}
+    fallbackFlags = {
+      "-std=c++23",
+      "-I/nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/include/",
+      "-I/nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/x86_64-unknown-linux-gnu/"
+    }
   }
 }
 
@@ -92,6 +96,17 @@ lspconfig.rust_analyzer.setup({
       },
     },
   },
+})
+
+lspconfig.c3_lsp.setup({
+  cmd = { "/usr/local/bin/c3lsp" },
+  filetypes = { "c3", "c3i" },
+  root_dir = function(fname)
+    return lspconfig.util.root_pattern("project.json")(fname)
+        or lspconfig.util.path.dirname(fname)
+  end,
+  settings = {},
+  name = "c3_lsp"
 })
 
 vim.diagnostic.config({
@@ -136,3 +151,8 @@ vim.g.neovide_padding_top = 10
 vim.g.neovide_padding_bottom = 10
 vim.g.neovide_padding_right = 10
 vim.g.neovide_padding_left = 10
+
+vim.g.neovide_transparency = 0.5
+
+vim.opt.winblend = 30
+vim.opt.pumblend = 30

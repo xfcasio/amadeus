@@ -8,6 +8,13 @@ dots-install::hyprland() {
   ln -fs "$HERE/hypr" "/home/$USER/.config/"
 }
 
+dots-install::amadeus-wallpapers() {
+  echo "* cloning amadeus-wallpapers repository"
+  [ -d ~/amadeus/Wallpapers ] \
+    && echo ' + found ~/amadeus/Wallpapers. will skip cloning.' \
+    || git clone 'https://github.com/xfcasio/amadeus-wallpapers' ~/amadeus/Wallpapers
+}
+
 dots-install::wallpaper() {
   echo "* creating wallpaper symlink"
   $SUDO ln -fs "$1" /usr/share/hypr/wall0.png

@@ -31,7 +31,7 @@ M.base46 = {
 
   hl_override = {
     Normal = {
-      bg = "#00070B",
+      bg = "none",
       fg = "#A9A9A9", 
     },
 

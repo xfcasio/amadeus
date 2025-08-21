@@ -5,9 +5,9 @@ endif
 syn match c3Identifier  display "\v<_*[a-z][A-Za-z0-9_]*>"
 syn match c3Function    display "\zs\(\w*\)*\s*\ze("
 syn match c3Macro       display "@\zs\(\w*\)*\s*\ze("
-syn match c3UserType    display "_*[A-Z][a-zA-Z0-9_]\+"
 syn match c3UserAttr    display "@_*[A-Z][a-zA-Z0-9_]\+"
 syn match c3GlobalConst display "_*[A-Z][A-Z0-9_]\+"
+syn match c3UserType    display "_*[A-Z][A-Z0-9_]*[a-z][a-zA-Z0-9_]*"
 syn match c3Label       display "^\s*_*[A-Z][A-Z0-9_]\+:"
 syn match c3ComptimeId  display "\v\$<_*[a-z][A-Za-z0-9_]*>"
 
@@ -57,7 +57,7 @@ syn keyword c3Keyword
       \ defer return
       \ switch case nextcase default
       \ cast asm
-      \ def fn enum macro fault struct bitstruct interface
+      \ def alias faultdef typedef fn enum macro fault struct bitstruct interface
       \ module import
 
 syn keyword c3Repeat
@@ -72,8 +72,7 @@ syn keyword c3BuiltinType typeid errtype void any anyfault bool
 syn keyword c3BuiltinType ichar short  int  long  int128  isz iptr
 syn keyword c3BuiltinType char  ushort uint ulong uint128 usz uptr
 syn keyword c3BuiltinType float16 float double float128
-syn keyword c3BuiltinType DString ZString
-syn keyword c3BuiltinType CShort CUShort CInt CUInt CLong CULong CLongLong CULongLong CSChar CUChar CChar CFile
+syn keyword c3BuiltinType String ZString WString DString
 
 syn keyword c3Null null
 syn keyword c3Boolean true false
@@ -133,7 +132,6 @@ syn match c3ComptimeKw display "\$vaconst"
 syn match c3ComptimeKw display "\$vacount"
 syn match c3ComptimeKw display "\$varef"
 syn match c3ComptimeKw display "\$vatype"
-syn match c3ComptimeKw display "\$typefrom"
 
 hi def link c3Number       Number
 hi def link c3Float        Number

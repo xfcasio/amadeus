@@ -1,3 +1,4 @@
+//@ pragma Env QT_SCALE_FACTOR=1.0
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls

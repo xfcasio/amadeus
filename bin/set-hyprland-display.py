@@ -29,6 +29,10 @@ hdmi_to_laptop_map = {
         "monitor=eDP-1,disable\n": "monitor=HDMI-A-1,disable\n"
     },
 
+    "./quickshell/shell.qml": {
+        "//@ pragma Env QT_SCALE_FACTOR=1.0\n": "//@ pragma Env QT_SCALE_FACTOR=1.4\n"
+    },
+
     "./alacritty.toml": {
         "size = 8.3\n": "size = 12\n"
     }
