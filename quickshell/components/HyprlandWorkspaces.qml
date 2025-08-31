@@ -51,7 +51,7 @@ Rectangle {
             layer.samples: 8
 
             ShapePath {
-              fillColor: (modelData.active || parent.hovered) ? "#A9A9A9" : "#333B3F"
+              fillColor: (modelData.active || parent.hovered) ? "#5F87D7" : "#333B3F"
               strokeColor: "transparent"
               strokeWidth: 0
 

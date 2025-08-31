@@ -49,7 +49,7 @@ render_timer = false
 size = 9
 
 [font.bold]
-family = "Terminus"
+family = "Cozette"
 #family = "Cartograph CF"
 style = "Bold"
 
@@ -58,11 +58,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Terminus"
+family = "Cozette"
 style = "Italic"
 
 [font.normal]
-family = "Terminus"
+family = "Cozette"
 style = "Regular"
 
 [font.offset]
@@ -383,7 +383,7 @@ program = "fish"
 [window]
 decorations = "buttonless"
 dynamic_padding = true
-opacity = 0.80
+opacity = 1.00
 startup_mode = "Windowed"
 
 [window.dimensions]

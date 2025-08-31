@@ -30,6 +30,17 @@ M.base46 = {
   theme = 'rxyhn',
 
   hl_override = {
+    ["Function"] = { fg = "#BC83E3" },
+    ["Statement"] = { fg = "#7F98E8" },
+    ["@variable"] = { fg = "#FA967E" },
+    ["@Type"] = { fg = "#FA967E" },
+    ["Type"] = { fg = "#E6930C" },
+    ["Special"] = { fg = "#BC83E3" },
+    ["Repeat"] = { fg = "#BC83E3" },
+    ["PreProc"] = { fg = "#BC83E3" },
+    ["Macro"] = { fg = "#BC83E3" },
+    ["@constant"] = { fg = "#F7A41D" },
+
     Normal = {
       bg = "none",
       fg = "#A9A9A9", 

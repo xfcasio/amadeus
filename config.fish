@@ -13,7 +13,7 @@ set -x TERM 'xterm-256color'
 fish_add_path /usr/sbin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.cargo/bin
-fish_add_path $HOME/.nix-profile/bin
+# fish_add_path $HOME/.nix-profile/bin
 
 # FZF configuration
 set -x FZF_CTRL_T_COMMAND "eza --icons"
