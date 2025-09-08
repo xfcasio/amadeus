@@ -18,7 +18,7 @@ $DEBUG \
   SUDO=$(which doas 2> /dev/null)
   [ $? -eq 1 ] && SUDO=sudo
   
-  HYPR_WALL="$HERE/Wallpapers/lake.png"
+  HYPR_WALL="$HERE/Wallpapers/GMK-Pono.png"
   
   # NOTE: #######################################################
   #  * many components assume the amadeus repo is located       #

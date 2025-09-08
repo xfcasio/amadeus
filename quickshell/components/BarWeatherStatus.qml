@@ -34,7 +34,7 @@ Rectangle {
   }
 
   Timer {
-    interval: 100000
+    interval: 1000000
     running: true
     repeat: true
     onTriggered: { weatherProcess.running = true }

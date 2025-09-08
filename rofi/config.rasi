@@ -110,7 +110,7 @@ inputbar {
     max-height:                  40px;
     /*children:                    [ "textbox-prompt-colon", "entry", "mode-switcher" ];*/
     //background-image:            url("~/p.png", width);
-    background-image:            url("~/amadeus/Wallpapers/lake.png", height);
+    background-image:            url("~/amadeus/Wallpapers/GMK-Pono.png", height);
     orientation:                 vertical;
 }
 

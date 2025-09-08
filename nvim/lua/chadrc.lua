@@ -26,15 +26,18 @@ M.ui = {
   }
 }
 
+M.override = {
+}
+
 M.base46 = {
   theme = 'rxyhn',
 
   hl_override = {
     ["Function"] = { fg = "#BC83E3" },
     ["Statement"] = { fg = "#7F98E8" },
-    ["@variable"] = { fg = "#FA967E" },
+    ["@variable"] = { fg = "#E6930C" },
     ["@Type"] = { fg = "#FA967E" },
-    ["Type"] = { fg = "#E6930C" },
+    ["Type"] = { fg = "#FA967E" },
     ["Special"] = { fg = "#BC83E3" },
     ["Repeat"] = { fg = "#BC83E3" },
     ["PreProc"] = { fg = "#BC83E3" },
@@ -45,6 +48,9 @@ M.base46 = {
       bg = "none",
       fg = "#A9A9A9", 
     },
+
+    LineNr = { fg = "#767B7D" },
+    CursorLineNr = { fg = "#ff9e64" },
 
     NvimTreeNormal = { bg = 'none' },
     NvimTreeNormalNC = { bg = 'none' },

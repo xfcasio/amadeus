@@ -71,7 +71,6 @@ lspconfig.clangd.setup{
   init_options = {
     clangdFileStatus = true,
     fallbackFlags = {
-      "-std=c++23",
       "-I/nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/include/",
       "-I/nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/x86_64-unknown-linux-gnu/"
     }
