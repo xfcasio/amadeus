@@ -156,6 +156,12 @@ vim.treesitter.language.register('c', 'cpp')
 
 vim.cmd("set numberwidth=4")
 vim.cmd("set relativenumber")
+vim.o.wrap = false
+
+vim.o.list = true
+vim.o.listchars = "extends:⟩,precedes:⟨"
+
+vim.cmd [[highlight NonText guifg=#333B3F gui=nocombine]]
 
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
