@@ -97,6 +97,7 @@ lspconfig.rust_analyzer.setup({
   },
 })
 
+vim.g.zig_fmt_autosave = 0
 lspconfig.zls.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
 
