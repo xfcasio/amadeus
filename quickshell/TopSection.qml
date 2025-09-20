@@ -17,7 +17,7 @@ Rectangle {
   Layout.preferredHeight: columnLayout.implicitHeight + 12
   color: "transparent"
 
-  property real innerModulesRadius: 3
+  property real innerModulesRadius: 0
 
   // System info properties
   property real cpuUsage: 0.3

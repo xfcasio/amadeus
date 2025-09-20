@@ -48,7 +48,7 @@ Scope {
     Rectangle {
       anchors.fill: parent
       color: "#000A0E"
-      radius: 4
+      radius: 0
 
       border.width: 2
       border.color: "#111A1F"

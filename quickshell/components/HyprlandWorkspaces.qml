@@ -17,7 +17,7 @@ Rectangle {
   anchors.horizontalCenter: parent.horizontalCenter
   implicitHeight: childrenRect.height + 28
   width: 24
-  radius: 2
+  radius: 0
   color: "#111A1F"
 
   border.width: 1

@@ -78,7 +78,12 @@ return {
 
   {
     "folke/which-key.nvim",
-    enabled = false
+    enabled = false,
+  },
+
+  {
+    "ziglang/zig.vim",
+    enabled = true,
   },
 
 --  {

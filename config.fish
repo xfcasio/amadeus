@@ -37,7 +37,7 @@ alias b64='base64'
 alias q='exit'
 alias sudo='doas'
 alias zg='azg 0.15.1'
-alias zig-std='cd /usr/lib/zig/std && nvim && cd ~'
+alias zig-std='cd ~/.nix-profile/lib/zig/std && nvim && cd ~'
 
 alias gac='git add . && git commit -m'
 alias gst='git status'

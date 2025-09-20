@@ -120,7 +120,7 @@ lspconfig.zls.setup {
       semantic_tokens = "partial",
 
       -- omit the following line if `zig` is in your PATH
-      zig_exe_path = '/bin/zig'
+      zig_exe_path = '/usr/bin/zig'
     }
   }
 }

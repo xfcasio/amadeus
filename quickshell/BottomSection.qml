@@ -17,7 +17,7 @@ Rectangle {
   Layout.preferredHeight: childrenRect.height + 8
   color: "transparent"
   
-  property real innerModulesRadius: 3
+  property real innerModulesRadius: 0
 
   // Date/time formatting
   property string currentTime: Qt.formatDateTime(new Date(), "hh:mm")
