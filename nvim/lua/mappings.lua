@@ -14,7 +14,13 @@ map('n', 'gd', vim.lsp.buf.definition)
 map('n', 'gr', vim.lsp.buf.references)
 
 map({'n', 't'}, '<A-k>', function ()
-  require("nvchad.term").toggle { pos = "sp", size = 0.7 }
+  require("nvchad.term").toggle {
+    pos = "float",
+    float_opts = {
+      row = 0.01, col = 0.045,
+      width = 0.9, height = 0.86
+    }
+  }
 end)
 
 map({'n', 't'}, '<A-l>', function ()
