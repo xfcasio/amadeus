@@ -59,6 +59,12 @@ dots-install::nushell() {
   ln -fs "$HERE/nushell/git-status.nu" "/home/$USER/.config/nushell/git-status.nu"
 }
 
+dots-install::zellij () {
+  echo "* creating zellij symbolic link"
+  mkdir -p "/home/$USER/.config/zellij"
+  ln -fs "$HERE/zellij/config.kdl" "/home/$USER/.config/zellij/config.kdl"
+}
+
 dots-install::applications() {
   echo "* creating application symbolic links"
   mkdir -p ~/.config/kitty

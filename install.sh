@@ -40,6 +40,7 @@ $DEBUG \
 # dots-install::zsh                     # install my zsh configuration to ~/.zshrc
 # dots-install::nushell                 # install my nushell configuration to ~/.config/nushell/
   dots-install::fish                    # install my fish configuration to ~/.config/fish/config.fish
+  dots-install::zellij                  # install my zellij configuration to ~/.config/zellij/config.kdl
   dots-install::neovim                  # install my neovim configuration
   dots-install::applications            # install configs for rofi, alacritty, kitty, vencord
   dots-install::neofetch                # install neofetch config
