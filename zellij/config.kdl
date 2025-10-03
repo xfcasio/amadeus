@@ -232,120 +232,120 @@ keybinds clear-defaults=true {
 themes {
     custom-theme {
         text_unselected {
-            base 169 169 169
-            background 8 8 8
-            emphasis_0 233 150 126
-            emphasis_1 120 184 146
-            emphasis_2 120 184 146
-            emphasis_3 196 136 236
+            base 103 145 201
+            background 2 13 17
+            emphasis_0 103 145 201
+            emphasis_1 103 145 201
+            emphasis_2 103 145 201
+            emphasis_3 103 145 201
         }
         text_selected {
-            base 169 169 169
-            background 8 8 8
-            emphasis_0 233 150 126
+            base 120 184 146
+            background 2 13 17
+            emphasis_0 120 184 146
             emphasis_1 120 184 146
             emphasis_2 120 184 146
-            emphasis_3 196 136 236
+            emphasis_3 120 184 146
         }
         ribbon_selected {
-            base 8 8 8
+            base 2 13 17
             background 120 184 146
-            emphasis_0 242 110 116
-            emphasis_1 233 150 126
-            emphasis_2 196 136 236
-            emphasis_3 121 170 235
+            emphasis_0 120 184 146
+            emphasis_1 120 184 146
+            emphasis_2 120 184 146
+            emphasis_3 120 184 146
         }
         ribbon_unselected {
-            base 8 8 8
-            background 169 169 169
-            emphasis_0 242 110 116
-            emphasis_1 169 169 169
-            emphasis_2 121 170 235
-            emphasis_3 196 136 236
+            base 2 13 17
+            background 103 145 201
+            emphasis_0 103 145 201
+            emphasis_1 103 145 201
+            emphasis_2 103 145 201
+            emphasis_3 103 145 201
         }
         table_title {
             base 120 184 146
-            background 0
-            emphasis_0 233 150 126
+            background 2 13 17
+            emphasis_0 120 184 146
             emphasis_1 120 184 146
             emphasis_2 120 184 146
-            emphasis_3 196 136 236
+            emphasis_3 120 184 146
         }
         table_cell_selected {
-            base 169 169 169
-            background 8 8 8
-            emphasis_0 233 150 126
+            base 120 184 146
+            background 2 13 17
+            emphasis_0 120 184 146
             emphasis_1 120 184 146
             emphasis_2 120 184 146
-            emphasis_3 196 136 236
+            emphasis_3 120 184 146
         }
         table_cell_unselected {
-            base 169 169 169
-            background 8 8 8
-            emphasis_0 233 150 126
-            emphasis_1 120 184 146
-            emphasis_2 120 184 146
-            emphasis_3 196 136 236
+            base 103 145 201
+            background 2 13 17
+            emphasis_0 103 145 201
+            emphasis_1 103 145 201
+            emphasis_2 103 145 201
+            emphasis_3 103 145 201
         }
         list_selected {
-            base 169 169 169
-            background 8 8 8
-            emphasis_0 233 150 126
+            base 120 184 146
+            background 2 13 17
+            emphasis_0 120 184 146
             emphasis_1 120 184 146
             emphasis_2 120 184 146
-            emphasis_3 196 136 236
+            emphasis_3 120 184 146
         }
         list_unselected {
-            base 169 169 169
-            background 8 8 8
-            emphasis_0 233 150 126
-            emphasis_1 120 184 146
-            emphasis_2 120 184 146
-            emphasis_3 196 136 236
+            base 103 145 201
+            background 2 13 17
+            emphasis_0 103 145 201
+            emphasis_1 103 145 201
+            emphasis_2 103 145 201
+            emphasis_3 103 145 201
         }
         frame_selected {
             base 120 184 146
-            background 0
-            emphasis_0 233 150 126
+            background 2 13 17
+            emphasis_0 120 184 146
             emphasis_1 120 184 146
-            emphasis_2 196 136 236
-            emphasis_3 0
+            emphasis_2 120 184 146
+            emphasis_3 120 184 146
         }
         frame_highlight {
-            base 233 150 126
-            background 0
-            emphasis_0 233 150 126
-            emphasis_1 233 150 126
-            emphasis_2 233 150 126
-            emphasis_3 233 150 126
+            base 120 184 146
+            background 2 13 17
+            emphasis_0 120 184 146
+            emphasis_1 120 184 146
+            emphasis_2 120 184 146
+            emphasis_3 120 184 146
         }
         exit_code_success {
             base 120 184 146
-            background 0
+            background 2 13 17
             emphasis_0 120 184 146
-            emphasis_1 8 8 8
-            emphasis_2 196 136 236
-            emphasis_3 121 170 235
+            emphasis_1 120 184 146
+            emphasis_2 120 184 146
+            emphasis_3 120 184 146
         }
         exit_code_error {
             base 242 110 116
-            background 0
-            emphasis_0 233 150 126
-            emphasis_1 0
-            emphasis_2 0
-            emphasis_3 0
+            background 2 13 17
+            emphasis_0 242 110 116
+            emphasis_1 242 110 116
+            emphasis_2 242 110 116
+            emphasis_3 242 110 116
         }
         multiplayer_user_colors {
-            player_1 196 136 236
-            player_2 121 170 235
-            player_3 0
-            player_4 233 150 126
-            player_5 120 184 146
-            player_6 0
-            player_7 242 110 116
-            player_8 0
-            player_9 0
-            player_10 0
+            player_1 120 184 146
+            player_2 103 145 201
+            player_3 242 110 116
+            player_4 196 136 236
+            player_5 121 170 235
+            player_6 200 200 200
+            player_7 180 180 180
+            player_8 150 150 150
+            player_9 100 100 100
+            player_10 80 80 80
         }
     }
 }

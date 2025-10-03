@@ -57,6 +57,10 @@ end)
 -- ]], { output = false })
 
 require("nvim-tree").setup({
+  view = {
+    width = 24,
+  },
+
   hijack_directories = {
     enable = true,
     auto_open = true,
