@@ -157,6 +157,20 @@ vim.diagnostic.config({
   },
 })
 
+
+-- NvimTree :open command (with xdg-open)
+vim.api.nvim_create_user_command("Open", function()
+  local api = require("nvim-tree.api")
+  local node = api.tree.get_node_under_cursor()
+
+  if not node then
+    print("No file selected.")
+    return
+  end
+  local path = node.absolute_path
+  vim.fn.jobstart({ "xdg-open", path }, { detach = true })
+end, {})
+
 vim.treesitter.language.register('c', 'cpp')
 
 vim.cmd("set numberwidth=4")
