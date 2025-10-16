@@ -158,7 +158,7 @@ vim.diagnostic.config({
 })
 
 
--- NvimTree :open command (with xdg-open)
+-- NvimTree :Open command (with xdg-open)
 vim.api.nvim_create_user_command("Open", function()
   local api = require("nvim-tree.api")
   local node = api.tree.get_node_under_cursor()
@@ -170,6 +170,13 @@ vim.api.nvim_create_user_command("Open", function()
   local path = node.absolute_path
   vim.fn.jobstart({ "xdg-open", path }, { detach = true })
 end, {})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.conceallevel = 2
+  end,
+})
 
 vim.treesitter.language.register('c', 'cpp')
 

@@ -27,5 +27,15 @@ map({'n', 't'}, '<A-l>', function ()
   require("nvchad.term").toggle { pos = "vsp", size = 0.5 }
 end)
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown" },
+  callback = function()
+    -- Override gd for Obsidian
+    vim.keymap.set("n", "gd", function()
+      vim.cmd("ObsidianFollowLink")
+    end, { buffer = true, noremap = true, desc = "Follow Obsidian link" })
+  end,
+})
+
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
