@@ -180,6 +180,16 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.treesitter.language.register('c', 'cpp')
 
+
+require('render-markdown').setup({
+  bullet = {
+    icon = "•",
+    highlight = 'MarkdownListDot',
+  },
+})
+
+vim.api.nvim_set_hl(0, 'MarkdownListDot', { fg = '#5F87D7' })
+
 vim.cmd("set numberwidth=4")
 vim.cmd("set relativenumber")
 vim.o.wrap = false
