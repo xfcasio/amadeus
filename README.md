@@ -4,6 +4,12 @@
         <img src="https://img.shields.io/badge/BAR-Quickshell-blue?colorA=00070B&colorB=78B8A2&style=for-the-badge" />
         <img src="https://img.shields.io/badge/EDITOR-Neovim-blue?colorA=00070B&colorB=C488EC&style=for-the-badge" />
         <img src="https://img.shields.io/badge/SHELL-FISH-blue?colorA=00070B&colorB=6791C9&style=for-the-badge" /> <br>
+        <a href="https://www.youtube.com/channel/UCfhyTQpimu5Bp8Z4Q1rho1A?sub_confirmation=1" alt="Youtube Channel">
+                <img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white" />
+        </a>
+        <a href="https://discord.gg/BJtTBNYHpp" alt="Programming and Linux Community">
+                <img src="https://img.shields.io/discord/819650821314052106?color=7289DA&labelColor=4a64bd&logo=discord&logoColor=white&style=for-the-badge" />
+        </a> <br>
         <h4 align="center"> my personal desktop made with hyprland and quickshell </h4>
 </p>
 
