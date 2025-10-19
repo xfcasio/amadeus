@@ -8,7 +8,7 @@
                 <img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white" />
         </a>
         <a href="https://discord.gg/BJtTBNYHpp" alt="Programming and Linux Community">
-                <img src="https://img.shields.io/discord/819650821314052106?color=7289DA&labelColor=4a64bd&logo=discord&logoColor=white&style=for-the-badge" />
+                <img src="https://img.shields.io/badge/CHAT-DISCORD SERVER-blue?colorA=00070B&colorB=5661EA&style=for-the-badge" /> <br>
         </a> <br>
         <h4 align="center"> my personal desktop made with hyprland and quickshell </h4>
 </p>
