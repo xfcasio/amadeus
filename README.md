@@ -13,7 +13,7 @@
         <h4 align="center"> my personal desktop made with hyprland and quickshell </h4>
 </p>
 
->[!NOTE]
+>[!IMPORTANT]
 >many components assume the amadeus repo is located at "~/amadeus". please either clone it there or
 >modify the configs accordingly.
 
