@@ -12,7 +12,7 @@ group.add_argument('-m', '--hdmi', action='store_true', help='map all hyprland w
 args = parser.parse_args()
 
 hdmi_to_laptop_map = {
-    "./hypr/hyprland.conf": {
+    "./modules/hypr/hyprland.conf": {
         "monitor = HDMI-A-1, 1366x768@59.79Hz, auto, 1\n": "monitor = , 1920x1080, auto, 1\n",
 
         "workspace = 1, monitor:HDMI-A-1\n": "workspace = 1, monitor:eDP-1\n",
@@ -29,11 +29,11 @@ hdmi_to_laptop_map = {
         "monitor=eDP-1,disable\n": "monitor=HDMI-A-1,disable\n"
     },
 
-    "./quickshell/shell.qml": {
+    "./modules/quickshell/shell.qml": {
         "//@ pragma Env QT_SCALE_FACTOR=1.0\n": "//@ pragma Env QT_SCALE_FACTOR=1.4\n"
     },
 
-    "./alacritty.toml": {
+    "./modules/alacritty.toml": {
         "size = 8.3\n": "size = 12\n"
     }
 }
