@@ -17,10 +17,16 @@ Rectangle {
   height: 28
   width: 28
   radius: innerModulesRadius
-  color: "#171A20"
+  color: hoverHandler.hovered ? "#28DF5B61" : "#1D1A20"
 
   border.width: 1
-  border.color: "#171F24"
+  border.color: hoverHandler.hovered ? "#44DF5B61" : "#171F24"
+
+  HoverHandler { id: hoverHandler }
+
+  Behavior on border.color {
+    ColorAnimation { duration: 200 }
+  }
 
   Image {
     anchors.centerIn: parent

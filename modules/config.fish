@@ -70,7 +70,7 @@ function fish_prompt
     # Build prompt
     set -l prompt_bg (set_color -b '#5F87D7')
     set -l prompt_fg (set_color '#12171d')
-    set -l second_bg (set_color -b '#333B3F')
+    set -l second_bg (set_color -b '#12171d')
     set -l second_fg (set_color '#5F87D7')
     
     echo -n $prompt_bg$prompt_fg' skin crawler '$second_bg$second_fg' '

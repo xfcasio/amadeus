@@ -18,10 +18,16 @@ Rectangle {
   implicitHeight: childrenRect.height + 28
   width: 24
   radius: 2
-  color: "#111A1F"
+  color: (hoverHandler.hovered) ? "#11C0837F" : "#111A1F"
+
+  HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: "#171F24"
+  border.color: (hoverHandler.hovered) ? "#77C0837F" : "#171F24"
+
+  Behavior on border.color {
+    ColorAnimation { duration: 200 }
+  }
 
   ColumnLayout {
     anchors.centerIn: parent

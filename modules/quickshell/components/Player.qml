@@ -20,8 +20,14 @@ Rectangle {
   radius: innerModulesRadius
   color: "#111A1F"
 
+  HoverHandler { id: hoverHandler }
+
   border.width: 1
-  border.color: "#171F24"
+  border.color: (hoverHandler.hovered) ? "#77BC83E3" : "#111A1F"
+
+  Behavior on border.color {
+    ColorAnimation { duration: 200 }
+  }
 
   property bool playing: false
   property string artUrl: ''
@@ -100,11 +106,15 @@ Rectangle {
 
   Rectangle {
     id: topHalf
-    visible: height > 0
+    visible: height > 5
+    anchors.top: parent.top
+    anchors.topMargin: 1
     anchors.bottom: parent.bottom
     anchors.bottomMargin: 24
     anchors.left: parent.left
+    anchors.leftMargin: 1
     anchors.right: parent.right
+    anchors.rightMargin: 1
     height: playing ? 96 : 0
     clip: true
 
@@ -137,7 +147,7 @@ Rectangle {
       maskSource: Rectangle {
         width: topHalf.width
         height: topHalf.height
-        radius: playerModule.radius
+        radius: topHalf.height > playerModule.radius ? playerModule.radius : 0
       }
     }
   }
@@ -147,6 +157,7 @@ Rectangle {
     anchors.bottom: parent.bottom
     anchors.bottomMargin: 1
     height: 26
+    width: 26
     radius: playerModule.radius
     color: "#111A1F"
 

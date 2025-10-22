@@ -17,10 +17,16 @@ Rectangle {
   visible: SystemTray.items.values.length
   width: 28
   radius: innerModulesRadius
-  color: "#111A1F"
+  color: (hoverHandler.hovered) ? "#11A9A9A9" : "#111A1F"
+
+  HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: "#171F24"
+  border.color: (hoverHandler.hovered) ? "#77A9A9A9" : "#171F24"
+
+  Behavior on border.color {
+    ColorAnimation { duration: 200 }
+  }
 
   ColumnLayout {
     anchors.centerIn: parent

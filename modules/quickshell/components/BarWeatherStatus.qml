@@ -15,11 +15,15 @@ Rectangle {
   Layout.alignment: Qt.AlignHCenter
   width: 28
   height: 48
-  color: "#111A1F"
+  color: (hoverHandler.hovered) ? "#226791C9" : "#111A1F"
   radius: innerModulesRadius
 
   border.width: 1
-  border.color: "#171F24"
+  border.color: (hoverHandler.hovered) ? "#776791C9" : "#171F24"
+
+  Behavior on border.color {
+    ColorAnimation { duration: 200 }
+  }
 
   property real temperature: 0
 
@@ -38,6 +42,12 @@ Rectangle {
     running: true
     repeat: true
     onTriggered: { weatherProcess.running = true }
+  }
+
+  HoverHandler { id: hoverHandler }
+
+  Behavior on border.color {
+    ColorAnimation { duration: 200 }
   }
 
   ColumnLayout {

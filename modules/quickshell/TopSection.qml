@@ -94,10 +94,16 @@ Rectangle {
       width: 28
       height: 60
       radius: innerModulesRadius
-      color: "#111A1F"
+
+      color: (hoverHandler.hovered) ? "#1178B892" : "#111A1F"
+
+      HoverHandler { id: hoverHandler }
+      Behavior on border.color {
+        ColorAnimation { duration: 200 }
+      }
 
       border.width: 1
-      border.color: "#171F24"
+      border.color: (hoverHandler.hovered) ? "#7778B892" : "#171F24"
 
       ColumnLayout {
         anchors.centerIn: parent

@@ -16,10 +16,16 @@ Rectangle {
   width: 28
   height: 78
   radius: innerModulesRadius
-  color: "#111A1F"
+  color: (hoverHandler.hovered) ? "#11BC83E3" : "#111A1F"
+
+  HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: "#171F24"
+  border.color: (hoverHandler.hovered) ? "#77BC83E3" : "#171F24"
+
+  Behavior on border.color {
+    ColorAnimation { duration: 200 }
+  }
 
   readonly property PwNode sink: Pipewire.defaultAudioSink
 
@@ -28,7 +34,7 @@ Rectangle {
   property real currentVolume: 0.5
   property real lastVolume: 0
 
-  
+
   PwObjectTracker {
     id: pwObjectTracker
     objects: [Pipewire.defaultAudioSink, Pipewire.defaultAudioSource]
