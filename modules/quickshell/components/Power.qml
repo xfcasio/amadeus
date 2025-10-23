@@ -20,7 +20,7 @@ Rectangle {
   color: hoverHandler.hovered ? "#28DF5B61" : "#1D1A20"
 
   border.width: 1
-  border.color: hoverHandler.hovered ? "#44DF5B61" : "#171F24"
+  border.color: hoverHandler.hovered ? "#77DF5B61" : "#171F24"
 
   HoverHandler { id: hoverHandler }
 

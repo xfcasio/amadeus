@@ -101,7 +101,7 @@ Rectangle {
               anchors.rightMargin: 2
               width: parent.width - 6
               height: Math.max(0, (parent.height - 6) * (batteryModule.batteryLevel / 100))
-              radius: 2
+              radius: 1
 
               gradient: Gradient {
                 GradientStop {

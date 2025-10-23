@@ -23,7 +23,7 @@ Rectangle {
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered) ? "#77BC83E3" : "#111A1F"
+  border.color: (hoverHandler.hovered && !playing) ? "#77BC83E3" : "#111A1F"
 
   Behavior on border.color {
     ColorAnimation { duration: 200 }
@@ -87,7 +87,6 @@ Rectangle {
     anchors.fill: parent
     acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
 
-    // so the parent handler doesn't trigger here
     onWheel: () => {}
 
     onClicked: (mouse) => {
@@ -101,6 +100,32 @@ Rectangle {
     NumberAnimation {
       duration: 1000
       easing.type: Easing.InOutQuart
+    }
+  }
+
+  Rectangle {
+    id: gradientBorder
+    anchors.fill: parent
+    radius: parent.radius
+    visible: playing
+    opacity: hoverHandler.hovered ? 1 : 0
+
+    Behavior on opacity {
+      NumberAnimation {
+        duration: 300
+      }
+    }
+
+    gradient: Gradient {
+      GradientStop { position: 0.6; color: "#171F24" }
+      GradientStop { position: 1.0; color: "#66BC83E3" }
+    }
+
+    Rectangle {
+      anchors.fill: parent
+      anchors.margins: 1
+      radius: parent.radius
+      color: "#171F24"
     }
   }
 
@@ -136,8 +161,8 @@ Rectangle {
       Rectangle {
         anchors.fill: parent
         gradient: Gradient {
-          GradientStop { position: 0.0; color: "#00000000" }
-          GradientStop { position: 0.94; color: "#131B1F" }
+          GradientStop { position: 0.3; color: "#00000000" }
+          GradientStop { position: 0.95; color: (hoverHandler.hovered) ? "#111A1F" : "#131B1F" }
         }
       }
     }
@@ -159,7 +184,7 @@ Rectangle {
     height: 26
     width: 26
     radius: playerModule.radius
-    color: "#111A1F"
+    color: (hoverHandler.hovered && !playing) ? "#02BC83E3" : "#111A1F"
 
     Image {
       anchors.centerIn: parent
