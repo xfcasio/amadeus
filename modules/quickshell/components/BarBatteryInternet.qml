@@ -37,9 +37,9 @@ Rectangle {
       property real batteryLevel: 100
 
       function getBatteryColor(percent, color_type) {
-        if (percent === 100) return ((color_type == 'JUICE') ? "#9978B8a2" : "#78B8a2")
-        if (percent >= 30) return ((color_type == 'JUICE') ? "#9978B892" : "#78B892")
-        if (percent >= 15) return ((color_type == 'JUICE') ? "#99ECD28B" : "#ECD28B")
+        //if (percent >= 50) return ((color_type == 'JUICE') ? "#9978B8a2" : "#78B8a2")
+        if (percent >= 50) return ((color_type == 'JUICE') ? "#9978B892" : "#78B892")
+        if (percent >= 30) return ((color_type == 'JUICE') ? "#99ECD28B" : "#ECD28B")
         return ((color_type == 'JUICE') ? "#99DF5B61" : "#DF5B61")
       }
     }
