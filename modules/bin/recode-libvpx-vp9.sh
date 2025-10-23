@@ -5,4 +5,4 @@
   exit 1
 }
 
-ffmpeg -i "$1" -c:v libvpx-vp9 -c:a libopus "$(date +"%Y%m%d%H%M%S").mp4"
+ffmpeg -i "$1" -c:v libvpx-vp9 -c:a libopus "$(date +"%Y%m%d%H%M%S").webm"
