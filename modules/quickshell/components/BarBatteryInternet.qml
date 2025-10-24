@@ -24,7 +24,7 @@ Rectangle {
   border.color: (hoverHandler.hovered) ? "#7778B892" : "#171F24"
 
   Behavior on border.color {
-    ColorAnimation { duration: 200 }
+    ColorAnimation { duration: 400 }
   }
 
   ColumnLayout {

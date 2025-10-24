@@ -22,7 +22,7 @@ Rectangle {
   border.color: (hoverHandler.hovered) ? "#776791C9" : "#171F24"
 
   Behavior on border.color {
-    ColorAnimation { duration: 200 }
+    ColorAnimation { duration: 400 }
   }
 
   property real temperature: 0
@@ -45,10 +45,6 @@ Rectangle {
   }
 
   HoverHandler { id: hoverHandler }
-
-  Behavior on border.color {
-    ColorAnimation { duration: 200 }
-  }
 
   ColumnLayout {
     anchors.centerIn: parent

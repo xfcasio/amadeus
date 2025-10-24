@@ -24,7 +24,7 @@ Rectangle {
   border.color: (hoverHandler.hovered) ? "#77BC83E3" : "#171F24"
 
   Behavior on border.color {
-    ColorAnimation { duration: 200 }
+    ColorAnimation { duration: 400 }
   }
 
   readonly property PwNode sink: Pipewire.defaultAudioSink
