@@ -1,8 +1,14 @@
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl g" { SwitchToMode "normal"; }
+        bind "Ctrl t" { SwitchToMode "tab"; }
+        bind "Alt Shift left"  { MoveFocusOrTab "left"; }
+        bind "Alt Shift right" { MoveFocusOrTab "right"; }
+        bind "Alt Shift h"     { MoveFocusOrTab "left"; }
+        bind "Alt Shift l"     { MoveFocusOrTab "right"; }
     }
     pane {
+        bind "Ctrl t" { SwitchToMode "tab"; }
         bind "left" { MoveFocus "left"; }
         bind "down" { MoveFocus "down"; }
         bind "up" { MoveFocus "up"; }
@@ -44,7 +50,7 @@ keybinds clear-defaults=true {
         bind "j" { GoToNextTab; }
         bind "k" { GoToPreviousTab; }
         bind "l" { GoToNextTab; }
-        bind "n" { NewTab; SwitchToMode "normal"; }
+        bind "n" { NewTab; SwitchToMode "locked"; }
         bind "r" { SwitchToMode "renametab"; TabNameInput 0; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "normal"; }
         bind "x" { CloseTab; SwitchToMode "normal"; }
@@ -125,6 +131,11 @@ keybinds clear-defaults=true {
         }
     }
     shared_except "locked" {
+        bind "Ctrl t" { SwitchToMode "tab"; }
+        bind "Alt Shift left"  { MoveFocusOrTab "left"; }
+        bind "Alt Shift right" { MoveFocusOrTab "right"; }
+        bind "Alt Shift h"     { MoveFocusOrTab "left"; }
+        bind "Alt Shift l"     { MoveFocusOrTab "right"; }
         bind "Alt left" { MoveFocusOrTab "left"; }
         bind "Alt down" { MoveFocus "down"; }
         bind "Alt up" { MoveFocus "up"; }
