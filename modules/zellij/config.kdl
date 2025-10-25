@@ -1,11 +1,18 @@
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl g" { SwitchToMode "normal"; }
+
         bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Alt Shift left"  { MoveFocusOrTab "left"; }
         bind "Alt Shift right" { MoveFocusOrTab "right"; }
         bind "Alt Shift h"     { MoveFocusOrTab "left"; }
         bind "Alt Shift l"     { MoveFocusOrTab "right"; }
+
+        bind "Ctrl p" { SwitchToMode "pane"; }
+        bind "Ctrl Shift left" { MoveFocus "left"; }
+        bind "Ctrl Shift down" { MoveFocus "down"; }
+        bind "Ctrl Shift up" { MoveFocus "up"; }
+        bind "Ctrl Shift right" { MoveFocus "right"; }
     }
     pane {
         bind "Ctrl t" { SwitchToMode "tab"; }
@@ -22,7 +29,7 @@ keybinds clear-defaults=true {
         bind "j" { MoveFocus "down"; }
         bind "k" { MoveFocus "up"; }
         bind "l" { MoveFocus "right"; }
-        bind "n" { NewPane; SwitchToMode "normal"; }
+        bind "n" { NewPane; SwitchToMode "locked"; }
         bind "p" { SwitchFocus; }
         bind "Ctrl p" { SwitchToMode "normal"; }
         bind "r" { NewPane "right"; SwitchToMode "normal"; }
@@ -132,6 +139,7 @@ keybinds clear-defaults=true {
     }
     shared_except "locked" {
         bind "Ctrl t" { SwitchToMode "tab"; }
+        bind "Ctrl p" { SwitchToMode "pane"; }
         bind "Alt Shift left"  { MoveFocusOrTab "left"; }
         bind "Alt Shift right" { MoveFocusOrTab "right"; }
         bind "Alt Shift h"     { MoveFocusOrTab "left"; }
