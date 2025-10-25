@@ -10,13 +10,14 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
   width: 28
   height: 28
   radius: innerModulesRadius
-  color: "#111A1F"
+  color: Colors.internetBackground
   
   property bool internetConnected: false
 

@@ -11,6 +11,7 @@ import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
 import 'components' as Components
+import qs.configuration
 
 Rectangle {
   Layout.fillWidth: true
@@ -95,7 +96,7 @@ Rectangle {
       height: 60
       radius: innerModulesRadius
 
-      color: (hoverHandler.hovered) ? "#1178B892" : "#111A1F"
+      color: (hoverHandler.hovered) ? Colors.moduleBackgroundHover : Colors.moduleBackground
 
       HoverHandler { id: hoverHandler }
       Behavior on border.color {
@@ -103,7 +104,7 @@ Rectangle {
       }
 
       border.width: 1
-      border.color: (hoverHandler.hovered) ? "#7778B892" : "#171F24"
+      border.color: (hoverHandler.hovered) ? Colors.moduleBorderHover : Colors.moduleBorder
 
       ColumnLayout {
         anchors.centerIn: parent
@@ -113,8 +114,8 @@ Rectangle {
         Components.RadialIndicator {
           Layout.alignment: Qt.AlignHCenter
           percent: cpuUsage
-          indicatorColor: "#DF5B61"
-          backgroundColor: "#333B3F"
+          indicatorColor: Colors.cpuIndicator
+          backgroundColor: Colors.indicatorBackground
           size: 24
         }
 
@@ -122,8 +123,8 @@ Rectangle {
         Components.RadialIndicator {
           Layout.alignment: Qt.AlignHCenter
           percent: ramUsage
-          indicatorColor: "#78B892"
-          backgroundColor: "#333B3F"
+          indicatorColor: Colors.ramIndicator
+          backgroundColor: Colors.indicatorBackground
           size: 24
         }
       }

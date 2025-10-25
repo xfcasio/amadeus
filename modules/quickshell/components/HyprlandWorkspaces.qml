@@ -11,6 +11,7 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
@@ -18,12 +19,12 @@ Rectangle {
   implicitHeight: childrenRect.height + 28
   width: 24
   radius: 2
-  color: (hoverHandler.hovered) ? "#11C0837F" : "#111A1F"
+  color: (hoverHandler.hovered) ? Colors.workspaceBackgroundHover : Colors.moduleBackground
 
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered) ? "#77C0837F" : "#171F24"
+  border.color: (hoverHandler.hovered) ? Colors.workspaceBorderHover : Colors.moduleBorder
 
   Behavior on border.color {
     ColorAnimation { duration: 400 }
@@ -57,7 +58,7 @@ Rectangle {
             layer.samples: 8
 
             ShapePath {
-              fillColor: (modelData.active || parent.hovered) ? "#C0837F" : "#333B3F"
+              fillColor: (modelData.active || parent.hovered) ? Colors.workspaceActive : Colors.workspaceInactive
               strokeColor: "transparent"
               strokeWidth: 0
 

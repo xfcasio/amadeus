@@ -11,6 +11,7 @@ import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
 import 'components' as Components
+import qs.configuration
 
 Rectangle {
   Layout.fillWidth: true
@@ -67,7 +68,7 @@ Rectangle {
 //      width: 24
 //      height: 40
 //      radius: 2
-//      color: "#111A1F"
+//      color: Colors.moduleBackground
 //
 //      ColumnLayout {
 //        anchors.centerIn: parent
@@ -76,7 +77,7 @@ Rectangle {
 //        Text {
 //          Layout.alignment: Qt.AlignHCenter
 //          text: currentHours
-//          color: "#C488EC"
+//          color: Colors.timeText
 //          font.family: "Cartograph CF Heavy"
 //          font.pixelSize: 11
 //        }
@@ -84,7 +85,7 @@ Rectangle {
 //        Text {
 //          Layout.alignment: Qt.AlignHCenter
 //          text: currentMinutes
-//          color: "#C488EC"
+//          color: Colors.timeText
 //          font.family: "Cartograph CF Heavy"
 //          font.pixelSize: 11
 //        }

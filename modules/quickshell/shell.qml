@@ -12,6 +12,7 @@ import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
 import 'components' as Components
+import qs.configuration
 
 Scope {
   id: root
@@ -47,11 +48,11 @@ Scope {
     // The actual bar - Extra rect to achieve bar-rounding
     Rectangle {
       anchors.fill: parent
-      color: "#000A0E"
+      color: Colors.barBackground
       radius: 4
 
       border.width: 2
-      border.color: "#111A1F"
+      border.color: Colors.barBorder
 
       Behavior on height {
         NumberAnimation {

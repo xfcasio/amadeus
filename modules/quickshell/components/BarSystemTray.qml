@@ -10,6 +10,7 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
@@ -17,12 +18,12 @@ Rectangle {
   visible: SystemTray.items.values.length
   width: 28
   radius: innerModulesRadius
-  color: (hoverHandler.hovered) ? "#11A9A9A9" : "#111A1F"
+  color: (hoverHandler.hovered) ? Colors.trayBackgroundHover : Colors.moduleBackground
 
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered) ? "#77A9A9A9" : "#171F24"
+  border.color: (hoverHandler.hovered) ? Colors.trayBorderHover : Colors.moduleBorder
 
   Behavior on border.color {
     ColorAnimation { duration: 400 }

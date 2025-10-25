@@ -10,16 +10,17 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
   width: 28
   height: 48
-  color: (hoverHandler.hovered) ? "#226791C9" : "#111A1F"
+  color: (hoverHandler.hovered) ? Colors.weatherBackgroundHover : Colors.weatherBackground
   radius: innerModulesRadius
 
   border.width: 1
-  border.color: (hoverHandler.hovered) ? "#776791C9" : "#171F24"
+  border.color: (hoverHandler.hovered) ? Colors.weatherBorderHover : Colors.moduleBorder
 
   Behavior on border.color {
     ColorAnimation { duration: 400 }
@@ -71,7 +72,7 @@ Rectangle {
       Text {
         anchors.centerIn: parent
         text: `${temperature}°`
-        color: "#E9967E"
+        color: Colors.weatherTemperature
         font.family: "Cartograph CF Heavy Italic"
         font.pixelSize: 11
       }

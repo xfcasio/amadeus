@@ -10,6 +10,7 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
@@ -18,7 +19,7 @@ Rectangle {
   width: 26//32
   height: 26//32
   radius: innerModulesRadius
-  color: "transparent"
+  color: Colors.moduleBackground
   clip: true
   //color: "#111A1F"
 

@@ -10,18 +10,19 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
   width: 28
   height: 64
   radius: innerModulesRadius
-  color: (hoverHandler.hovered) ? "#1178B892" : "#111A1F"
+  color: (hoverHandler.hovered) ? Colors.moduleBackgroundHover : Colors.moduleBackground
 
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered) ? "#7778B892" : "#171F24"
+  border.color: (hoverHandler.hovered) ? Colors.moduleBorderHover : Colors.moduleBorder
 
   Behavior on border.color {
     ColorAnimation { duration: 400 }
@@ -37,10 +38,9 @@ Rectangle {
       property real batteryLevel: 100
 
       function getBatteryColor(percent, color_type) {
-        //if (percent >= 50) return ((color_type == 'JUICE') ? "#9978B8a2" : "#78B8a2")
-        if (percent >= 50) return ((color_type == 'JUICE') ? "#9978B892" : "#78B892")
-        if (percent >= 30) return ((color_type == 'JUICE') ? "#99ECD28B" : "#ECD28B")
-        return ((color_type == 'JUICE') ? "#99DF5B61" : "#DF5B61")
+        if (percent >= 50) return ((color_type == 'JUICE') ? Colors.batteryHealthyJuice : Colors.batteryHealthy)
+        if (percent >= 30) return ((color_type == 'JUICE') ? Colors.batteryMediumJuice : Colors.batteryMedium)
+        return ((color_type == 'JUICE') ? Colors.batteryLowJuice : Colors.batteryLow)
       }
     }
 
@@ -88,7 +88,7 @@ Rectangle {
             width: 14
             height: 24
             radius: 4
-            color: "#041011"
+            color: Colors.batteryBackground
             border.color: batteryModule.getBatteryColor(batteryModule.batteryLevel, 'BORDER')
             border.width: 2
 
