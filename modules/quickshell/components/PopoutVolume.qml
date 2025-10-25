@@ -94,6 +94,7 @@ Scope {
     active: root.shouldShowOsd
 
     PanelWindow {
+      exclusionMode: ExclusionMode.Ignore
       anchors.bottom: true
       margins.bottom: screen.height / 12
 
