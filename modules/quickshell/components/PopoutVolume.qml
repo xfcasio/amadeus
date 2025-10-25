@@ -4,6 +4,7 @@ import Quickshell
 import Quickshell.Services.Pipewire
 import Quickshell.Widgets
 import Quickshell.Io
+import qs.configuration
 
 Scope {
   id: root
@@ -119,10 +120,10 @@ Scope {
         id: mainRect
         anchors.fill: parent
         radius: 4
-        color: "#111A1F"
+        color: Colors.popoutBackground
 
         border.width: 3
-        border.color: "#171F24"
+        border.color: Colors.popoutBorder
 
         property real yOffset: 0
 
@@ -206,7 +207,7 @@ Scope {
           }
 
           Rectangle {
-            color: "#333B3F"
+            color: Colors.volumeBarBackground
             Layout.fillWidth: true
             implicitHeight: 10
             radius: 2
@@ -220,8 +221,8 @@ Scope {
               }
               gradient: Gradient {
                 orientation: Gradient.Horizontal
-                GradientStop { position: 0; color: "#6791C9" }
-                GradientStop { position: 1; color: "#BC83E3" }
+                GradientStop { position: 0; color: Colors.volumeGradientStart }
+                GradientStop { position: 1; color: Colors.volumeGradientEnd }
               }
 
               width: {

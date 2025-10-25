@@ -10,6 +10,7 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
@@ -17,10 +18,10 @@ Rectangle {
   height: 28
   width: 28
   radius: innerModulesRadius
-  color: hoverHandler.hovered ? "#28DF5B61" : "#1D1A20"
+  color: hoverHandler.hovered ? Colors.powerBackgroundHover : Colors.powerBackground
 
   border.width: 1
-  border.color: hoverHandler.hovered ? "#77DF5B61" : "#171F24"
+  border.color: hoverHandler.hovered ? Colors.powerBorderHover : Colors.powerBorder
 
   HoverHandler { id: hoverHandler }
 

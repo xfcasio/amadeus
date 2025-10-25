@@ -10,6 +10,7 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   id: playerModule
@@ -18,12 +19,12 @@ Rectangle {
   layer.enabled: true
   width: 28
   radius: innerModulesRadius
-  color: "#111A1F"
+  color: Colors.moduleBackground
 
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered && !playing) ? "#77BC83E3" : "#111A1F"
+  border.color: (hoverHandler.hovered && !playing) ? Colors.playerBorderHover : Colors.moduleBackground
 
   Behavior on border.color {
     ColorAnimation { duration: 200 }
@@ -117,8 +118,8 @@ Rectangle {
     }
 
     gradient: Gradient {
-      GradientStop { position: 0.6; color: "#171F24" }
-      GradientStop { position: 1.0; color: "#66BC83E3" }
+      GradientStop { position: 0.6; color: Colors.playerGradientStart }
+      GradientStop { position: 1.0; color: Colors.playerGradientEnd }
     }
 
     Rectangle {

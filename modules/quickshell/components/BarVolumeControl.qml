@@ -10,18 +10,19 @@ import Quickshell.Services.SystemTray
 import Quickshell.Services.Pipewire
 import Quickshell.Services.Mpris
 import Qt5Compat.GraphicalEffects
+import qs.configuration
 
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
   width: 28
   height: 78
   radius: innerModulesRadius
-  color: (hoverHandler.hovered) ? "#11BC83E3" : "#111A1F"
+  color: (hoverHandler.hovered) ? Colors.moduleBackgroundHover : Colors.moduleBackground
 
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered) ? "#77BC83E3" : "#171F24"
+  border.color: (hoverHandler.hovered) ? Colors.moduleBorderHover : Colors.moduleBorder
 
   Behavior on border.color {
     ColorAnimation { duration: 400 }
@@ -111,7 +112,7 @@ Rectangle {
       Layout.bottomMargin: 4
       width: 8
       height: 46
-      color: "#333B3F"
+      color: Colors.volumeBarBackground
       radius: 1
 
       Rectangle {
@@ -125,8 +126,8 @@ Rectangle {
         radius: 1
         gradient: Gradient {
           orientation: Gradient.Vertical
-          GradientStop { position: 0; color: "#6791C9" }
-          GradientStop { position: 1; color: "#BC83E3" }
+          GradientStop { position: 0; color: Colors.volumeGradientStart }
+          GradientStop { position: 1; color: Colors.volumeGradientEnd }
         }
 
         Behavior on height {
