@@ -22,6 +22,8 @@ QtObject {
     readonly property color playerGradientEnd: "#66BC83E3"
     
     // Volume colors
+    readonly property color volumeBorderHover: "#77BC83E3"
+    readonly property color volumeBackgroundHover: "#11BC83E3"
     readonly property color volumeBarBackground: "#333B3F"
     readonly property color volumeGradientStart: "#6791C9"
     readonly property color volumeGradientEnd: "#BC83E3"

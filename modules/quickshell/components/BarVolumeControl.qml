@@ -17,12 +17,12 @@ Rectangle {
   width: 28
   height: 78
   radius: innerModulesRadius
-  color: (hoverHandler.hovered) ? Colors.moduleBackgroundHover : Colors.moduleBackground
+  color: (hoverHandler.hovered) ? Colors.volumeBackgroundHover : Colors.moduleBackground
 
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered) ? Colors.moduleBorderHover : Colors.moduleBorder
+  border.color: (hoverHandler.hovered) ? Colors.volumeBorderHover : Colors.moduleBorder
 
   Behavior on border.color {
     ColorAnimation { duration: 400 }
