@@ -46,10 +46,10 @@ print_events = false
 render_timer = false
 
 [font]
-size = 9
+size = 6
 
 [font.bold]
-family = "Cozette"
+family = "lemon"
 #family = "Cartograph CF"
 style = "Bold"
 
@@ -58,11 +58,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Cozette"
+family = "lemon"
 style = "Italic"
 
 [font.normal]
-family = "Cozette"
+family = "lemon"
 style = "Regular"
 
 [font.offset]
