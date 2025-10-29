@@ -59,14 +59,14 @@ window {
     width:                       260px;
     height:                      440px;
     x-offset:                    5px;
-    y-offset:                    4px;
+    y-offset:                    20px;
 
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
     border:                      2px solid;
-    border-radius:               0px;
+    border-radius:               2px;
     border-color:                #111A1F;
     cursor:                      "default";
     /* Backgroud Colors */

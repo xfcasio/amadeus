@@ -92,8 +92,8 @@ Rectangle {
     // CPU and RAM indicators
     Rectangle {
       Layout.alignment: Qt.AlignHCenter
-      width: 28
-      height: 60
+      width: 30
+      height: 32
       radius: innerModulesRadius
 
       color: (hoverHandler.hovered) ? Colors.moduleBackgroundHover : Colors.moduleBackground
@@ -110,22 +110,14 @@ Rectangle {
         anchors.centerIn: parent
         spacing: 2
 
-        // CPU indicator
-        Components.RadialIndicator {
-          Layout.alignment: Qt.AlignHCenter
-          percent: cpuUsage
-          indicatorColor: Colors.cpuIndicator
-          backgroundColor: Colors.indicatorBackground
+        // radial indicator
+        Components.MultiRingIndicator {
           size: 24
-        }
-
-        // RAM indicator
-        Components.RadialIndicator {
-          Layout.alignment: Qt.AlignHCenter
-          percent: ramUsage
-          indicatorColor: Colors.ramIndicator
           backgroundColor: Colors.indicatorBackground
-          size: 24
+          rings: [
+            { value: ramUsage, color: Colors.ramIndicator, thickness: 3, spacing: 1.2 },
+            { value: cpuUsage, color: Colors.cpuIndicator, thickness: 3.4 },
+          ]
         }
       }
     }
