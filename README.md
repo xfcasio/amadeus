@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-    <img src="./assets/0.png" />
+    <img src="./assets/x.png" />
     <img src="./assets/1.png" />
     <img src="./assets/2.png" />
     <img src="./assets/3.png" />
