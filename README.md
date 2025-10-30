@@ -82,6 +82,11 @@
 | `Normal` | `Alt + L` | Open side terminal |
 | `Normal` | `CTRL + X` | Scroll down (remapped from CTRL+E) |
 | `Normal` | `CTRL + M` | Scroll up (remapped from CTRL+Y) |
+| `Normal` | `gd` | Go to LSP definition (overridden in markdown for Obsidian links) |
+| `Normal` | `gr` | Show LSP references |
+| `Normal` | `va` | New obsidian.nvim note |
+| `Normal` | `vs` | Search obsidian.nvim notes in vault |
+| `Visual` | `x` | Turn selection into obsidian.nvim link |
 | `Visual` | `SHIFT + Up` | Move selected text up |
 | `Visual` | `SHIFT + Down` | Move selected text down |
 </div>
