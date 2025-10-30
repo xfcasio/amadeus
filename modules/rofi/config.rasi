@@ -59,7 +59,7 @@ window {
     width:                       260px;
     height:                      440px;
     x-offset:                    5px;
-    y-offset:                    20px;
+    y-offset:                    30px;
 
     /* properties for all widgets */
     enabled:                     true;

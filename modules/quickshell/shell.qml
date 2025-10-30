@@ -29,7 +29,7 @@ Scope {
 
   WlrLayershell {
     id: bar
-    margins { top: 10; bottom: 10; left: 8 }
+    margins { top: 30; bottom: 30; left: 8 }
     anchors { top: true; bottom: true; left: true }
     
     layer: WlrLayer.Top
