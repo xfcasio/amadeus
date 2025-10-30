@@ -29,7 +29,7 @@
 </div>
 
 <details>
-    <summary> Full view (Older themes also listed and available in git history (click to expand) </summary>
+    <summary> Full view (Older themes also listed and available in git history, click to expand) </summary>
     <p align="center">
         <img src="./assets/x.png" />
         <img src="./assets/1.png" />
