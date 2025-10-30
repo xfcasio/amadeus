@@ -44,7 +44,6 @@ $DEBUG \
 #  dots-install::kitty                  # install kitty configuration
   dots-install::vencord                 # install vencord configuration
   dots-install::neofetch                # install neofetch config
-  dots-install::matrix-iamb             # my [[ personal ]] iamb configuration (edit it)
   dots-install::fonts                   # fonts for common software
   dots-install::fzf                     # install fzf integration for zsh (installed to ~/.fzf.zsh)
   dots-install::bins                    # some utility scripts I often use (installed to /usr/local/bin)
