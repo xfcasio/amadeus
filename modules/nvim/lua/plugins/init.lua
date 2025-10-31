@@ -86,6 +86,43 @@ return {
         { name = "Cerebrum", path = "~/vaults/Cerebrum" },
       },
 
+      mappings = {
+        -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
+        ["gf"] = {
+          action = function()
+            return require("obsidian").util.gf_passthrough()
+          end,
+          opts = { noremap = false, expr = true, buffer = true },
+        },
+        -- Toggle check-boxes.
+        ["<leader>ch"] = {
+          action = function()
+            return require("obsidian").util.toggle_checkbox()
+          end,
+          opts = { buffer = true },
+        },
+        -- Smart action depending on context, either follow link or toggle checkbox.
+        ["<cr>"] = {
+          action = function()
+            return require("obsidian").util.smart_action()
+          end,
+          opts = { buffer = true, expr = true },
+        }
+      },
+
+      follow_url_func = function(url)
+        -- Open the URL in the default web browser.
+        -- vim.fn.jobstart({ "xdg-open", url })
+        vim.ui.open(url) -- need Neovim 0.10.0+
+      end,
+
+      -- Optional, by default when you use `:ObsidianFollowLink` on a link to an image
+      -- file it will be ignored but you can customize this behavior here.
+      ---@param img string
+      follow_img_func = function(img)
+        vim.fn.jobstart({"feh", url})
+      end,
+
       note_id_func = function(title)
         if title ~= nil and title ~= "" then
           return title
