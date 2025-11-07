@@ -67,10 +67,8 @@ require("nvim-tree").setup({
   },
 })
 
-local lspconfig = require "lspconfig"
-
--- Enable ccls for C/C++
-lspconfig.clangd.setup{
+-- clangd for C/C++
+vim.lsp.config('clangd', {
   cmd = { "clangd", "--completion-style=detailed" },
   init_options = {
     clangdFileStatus = true,
@@ -79,18 +77,17 @@ lspconfig.clangd.setup{
       "-I/nix/store/qs54xir5n4vhhbi22aydbkvyyq4v8p0l-gcc-14.2.1.20250322/include/c++/14.2.1.20250322/x86_64-unknown-linux-gnu/"
     }
   }
-}
+})
+vim.lsp.enable('clangd')
 
--- Enable rust-analyzer for Rust
-lspconfig.rust_analyzer.setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
+-- rust-analyzer for Rust
+vim.lsp.config('rust_analyzer', {
   filetypes = { "rust" },
-  root_dir = lspconfig.util.root_pattern("Cargo.toml"),
+  root_markers = { "Cargo.toml" },
   settings = {
     ["rust-analyzer"] = {
       cargo = {
-        allFeatures = true, -- Enable all features for analysis
+        allFeatures = true,
       },
       diagnostics = {
         enable = true,
@@ -100,47 +97,37 @@ lspconfig.rust_analyzer.setup({
     },
   },
 })
+vim.lsp.enable('rust_analyzer')
 
+-- zls for Zig
 vim.g.zig_fmt_autosave = 0
-lspconfig.zls.setup {
-  -- Server-specific settings. See `:help lspconfig-setup`
-
-  -- omit the following line if `zls` is in your PATH
+vim.lsp.config('zls', {
   cmd = { '/usr/local/bin/zls' },
-  -- There are two ways to set config options:
-  --   - edit your `zls.json` that applies to any editor that uses ZLS
-  --   - set in-editor config options with the `settings` field below.
-  --
-  -- Further information on how to configure ZLS:
-  -- https://zigtools.org/zls/configure/
   settings = {
     zls = {
-      -- Whether to enable build-on-save diagnostics
-      --
-      -- Further information about build-on save:
-      -- https://zigtools.org/zls/guides/build-on-save/
-      -- enable_build_on_save = true,
-
-      -- Neovim already provides basic syntax highlighting
       semantic_tokens = "partial",
-
-      -- omit the following line if `zig` is in your PATH
       zig_exe_path = '/usr/bin/zig'
     }
   }
-}
+})
+vim.lsp.enable('zls')
 
-lspconfig.c3_lsp.setup({
+-- c3_lsp for C3
+vim.lsp.config('c3_lsp', {
   cmd = { "/usr/local/bin/c3lsp" },
   filetypes = { "c3", "c3i" },
-  root_dir = function(fname)
-    return lspconfig.util.root_pattern("project.json")(fname)
-        or lspconfig.util.path.dirname(fname)
+  root_dir = function(bufnr, on_dir)
+    local fname = vim.api.nvim_buf_get_name(bufnr)
+    on_dir(
+      vim.fs.root(fname, { "project.json" })
+        or vim.fs.dirname(fname)
+    )
   end,
   settings = {},
-  name = "c3_lsp"
 })
+vim.lsp.enable('c3_lsp')
 
+-- Diagnostic configuration (unchanged)
 vim.diagnostic.config({
   severity_sort = true,
   signs = {

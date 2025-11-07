@@ -50,7 +50,7 @@ size = 6
 
 [font.bold]
 family = "lemon"
-#family = "Cartograph CF"
+#family = "fxd"
 style = "Bold"
 
 [font.glyph_offset]
