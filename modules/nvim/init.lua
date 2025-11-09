@@ -212,3 +212,5 @@ vim.g.neovide_transparency = 1.0
 
 vim.opt.winblend = 30
 vim.opt.pumblend = 30
+
+vim.opt.list = false
