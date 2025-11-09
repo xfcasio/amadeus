@@ -19,9 +19,8 @@ Rectangle {
   width: 26//32
   height: 26//32
   radius: innerModulesRadius
-  color: Colors.moduleBackground
+  color: Colors.barBackground
   clip: true
-  //color: "#111A1F"
 
   Image {
     anchors.fill: parent
