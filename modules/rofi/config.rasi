@@ -110,7 +110,7 @@ inputbar {
     max-height:                  40px;
     /*children:                    [ "textbox-prompt-colon", "entry", "mode-switcher" ];*/
     //background-image:            url("~/p.png", width);
-    background-image:            url("ROFI_MODULE_SHOULD_HANDLE_THIS", height);
+    background-image:            url("ROFI_MODULE_SHOULD_HANDLE_THIS", width);
     orientation:                 vertical;
 }
 
