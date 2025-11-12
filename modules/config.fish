@@ -68,10 +68,10 @@ function fish_prompt
     set -l reset (set_color normal)
     
     # Build prompt
-    set -l prompt_bg (set_color -b '#5F87D7')
+    set -l prompt_bg (set_color -b '#DF5B61')
     set -l prompt_fg (set_color '#12171d')
     set -l second_bg (set_color -b '#12171d')
-    set -l second_fg (set_color '#5F87D7')
+    set -l second_fg (set_color '#DF5B61')
     
     echo -n $prompt_bg$prompt_fg' skin crawler '$second_bg$second_fg' '
     echo -n (prompt_pwd)
