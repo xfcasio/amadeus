@@ -57,7 +57,7 @@ Rectangle {
   Process {
     id: ramProcess
     command: ["sh", "-c", "free | grep Mem: | awk '{printf \"%.0f\", ($2-$7)/$2*100}'"]
-  running: true
+    running: true
 
     stdout: SplitParser {
       onRead: data => {

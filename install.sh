@@ -18,8 +18,8 @@ $DEBUG \
   SUDO=$(which doas 2> /dev/null)
   [ $? -eq 1 ] && SUDO=sudo
   
-  HYPR_WALL="$AMADEUS_DIR/modules/user/Wallpapers/nazhim-cat.png"
-  ROFI_BANNER="$AMADEUS_DIR/modules/user/Wallpapers/nazhim-cat.low_res.png"
+  HYPR_WALL="$AMADEUS_DIR/modules/user/Wallpapers/fern.png"
+  ROFI_BANNER="$AMADEUS_DIR/modules/user/Wallpapers/fern.png"
   
   # NOTE: #######################################################
   #  * for the bar to actually display your profile             #
