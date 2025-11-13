@@ -14,7 +14,10 @@
 
 <div align="center">
     <img src="https://readme-typing-svg.demolab.com/?font=Cartograph%20CF%20Italic&weight=700&size=50&duration=1000&pause=0&color=6791C9&background=000A0E&center=true&vCenter=true&width=600&height=100&repeat=false&lines=Gallery"><br/>
-    <table>
+  <table>
+    <tr> <td> <img src="./assets/4.png" /> </td> </tr>
+  </table>
+  <table>
   <tr>
     <td>
       <img src="./assets/x.png"" />
@@ -26,14 +29,12 @@
     </td>
   </tr>
 </table>
-<table>
-  <tr> <td> <img src="./assets/4.png" /> </td> </tr>
-</table>
 </div>
 
 <details>
     <summary> Full view (Older themes also listed and available in git history, click to expand) </summary>
     <p align="center">
+        <img src="./assets/4.png" />
         <img src="./assets/x.png" />
         <img src="./assets/1.png" />
         <img src="./assets/2.png" />
