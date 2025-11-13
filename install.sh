@@ -5,6 +5,8 @@
 DEBUG=true
 #################################
 
+set -e
+
 $DEBUG \
   && REDIRECT_TARGET='/dev/stderr' \
   || REDIRECT_TARGET='/dev/null'
