@@ -49,7 +49,7 @@ render_timer = false
 size = 6
 
 [font.bold]
-family = "lemon"
+family = "Terminus"
 #family = "fxd"
 style = "Bold"
 
@@ -58,11 +58,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "lemon"
+family = "Terminus"
 style = "Italic"
 
 [font.normal]
-family = "lemon"
+family = "Terminus"
 style = "Regular"
 
 [font.offset]

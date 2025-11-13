@@ -35,7 +35,9 @@ Rectangle {
     // Battery Module
     QtObject {
       id: batteryModule
-      property real batteryLevel: 100
+      property real batteryLevel: 0 // this gets displayed, the next two vars are updated separately and are out of sync.
+      property real chargingAnimationBatteryLevel: 100
+      property real chargingAnimationIncrement: 0
 
       function getBatteryColor(percent, color_type) {
         if (percent >= 50) return ((color_type == 'JUICE') ? Colors.batteryHealthyJuice : Colors.batteryHealthy)
@@ -55,7 +57,28 @@ Rectangle {
         running: true
         command: [ "cat", "/sys/class/power_supply/BAT1/capacity" ]
         stdout: SplitParser {
-          onRead: percent => batteryModule.batteryLevel = percent
+          onRead: percent => batteryModule.chargingAnimationBatteryLevel = percent
+        }
+      }
+
+      Timer {
+        interval: 200
+        running: true
+        repeat: true
+        onTriggered: {
+          let bat_level = batteryModule.chargingAnimationBatteryLevel
+
+          if (UPowerDevice.state == UPowerDeviceState.Charging) {
+            batteryModule.chargingAnimationIncrement += (bat_level < 85)
+              ? ((bat_level < 60) ? 10 : 5)
+              : 2
+
+            batteryModule.chargingAnimationIncrement %= 101 - bat_level
+
+            batteryModule.batteryLevel = bat_level + batteryModule.chargingAnimationIncrement
+          } else {
+            batteryModule.batteryLevel = bat_level
+          }
         }
       }
 
