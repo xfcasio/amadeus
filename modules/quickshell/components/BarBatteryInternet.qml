@@ -68,7 +68,7 @@ Rectangle {
         onTriggered: {
           let bat_level = batteryModule.chargingAnimationBatteryLevel
 
-          if (UPowerDevice.state == UPowerDeviceState.Charging) {
+          if (UPower.displayDevice.state == UPowerDeviceState.Charging) {
             batteryModule.chargingAnimationIncrement += (bat_level < 85)
               ? ((bat_level < 60) ? 10 : 5)
               : 2
