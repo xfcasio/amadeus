@@ -90,7 +90,7 @@ dots-install::rofi() {
 }
 
 dots-install::vencord() {
-  echo "* copying rofi config"
+  echo "* copying vencord config"
   mkdir -p ~/.config/Vencord/themes
   ln -fs "$AMADEUS_DIR/modules/Vencord/themes/midnight-darker.theme.css" "/home/$USER/.config/Vencord/themes/midnight-darker.theme.css"
 }
