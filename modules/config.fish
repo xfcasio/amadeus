@@ -44,6 +44,13 @@ alias cb='cargo build'
 alias cr='cargo run'
 alias cargo-generate-flamelens='cargo flamegraph --post-process "flamelens --echo"'
 
+set -U fish_pager_color_prefix --underline cyan
+set -U fish_pager_color_completion normal
+set -U fish_pager_color_description purple
+set -U fish_pager_color_progress yellow
+set -U fish_pager_color_secondary_completion brblue
+set -U fish_color_selection --background=235
+
 # Git prompt colors
 set -g __fish_git_prompt_showdirtystate 'yes'
 set -g __fish_git_prompt_showstashstate 'yes'
