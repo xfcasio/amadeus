@@ -158,6 +158,51 @@ return {
     enabled = true,
   },
 
+  {
+    "sphamba/smear-cursor.nvim",
+    lazy = false,
+    opts = {
+      -- Smear cursor when switching buffers or windows.
+      smear_between_buffers = true,
+
+      -- Smear cursor when moving within line or to neighbor lines.
+      -- Use `min_horizontal_distance_smear` and `min_vertical_distance_smear` for finer control
+      smear_between_neighbor_lines = true,
+
+      -- Draw the smear in buffer space instead of screen space when scrolling
+      scroll_buffer_space = true,
+
+      -- Set to `true` if your font supports legacy computing symbols (block unicode symbols).
+      -- Smears and particles will look a lot less blocky.
+      legacy_computing_symbols_support = true,
+
+      -- Smear cursor in insert mode.
+      -- See also `vertical_bar_cursor_insert_mode` and `distance_stop_animating_vertical_bar`.
+      smear_insert_mode = true,
+
+      gradient_exponent = 0,
+      particles_enabled = true,
+      particle_spread = 1,
+      particles_per_second = 100,
+      particles_per_length = 100,
+      particle_max_lifetime = 2000,
+      particle_max_initial_velocity = 10,
+      particle_velocity_from_cursor = 0,
+      particle_random_velocity = 500,
+      particle_damping = 0.1,
+      particle_gravity = 100,
+    },
+  },
+
+--  {
+--    "karb94/neoscroll.nvim",
+--    opts = {
+--      performance_mode = true,
+--      duration_multiplier = 2.0,
+--      easing = "quadratic",
+--    },
+--  },
+
 --  {
 --    "IogaMaster/neocord",
 --    event = "VeryLazy",
@@ -175,5 +220,5 @@ return {
     dependencies = "nvzone/volt",
     opts = {},
     cmd = { "Typr", "TyprStats" },
-  }
+  },
 }
