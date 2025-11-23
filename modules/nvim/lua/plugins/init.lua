@@ -162,6 +162,8 @@ return {
     "sphamba/smear-cursor.nvim",
     lazy = false,
     opts = {
+      never_draw_over_target = true,
+
       -- Smear cursor when switching buffers or windows.
       smear_between_buffers = true,
 
