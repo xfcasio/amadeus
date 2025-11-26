@@ -49,8 +49,8 @@ render_timer = false
 size = 6
 
 [font.bold]
-family = "Terminus"
-#family = "fxd"
+family = "lemon"
+#family = "lemon"
 style = "Bold"
 
 [font.glyph_offset]
@@ -58,11 +58,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Terminus"
+family = "lemon"
 style = "Italic"
 
 [font.normal]
-family = "Terminus"
+family = "lemon"
 style = "Regular"
 
 [font.offset]

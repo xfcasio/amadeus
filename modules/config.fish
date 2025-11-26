@@ -3,6 +3,7 @@ set -x EDITOR nvim
 set -x MANPAGER 'nvim +Man!'
 set -x RUSTC_WRAPPER sccache
 set -x TERM 'xterm-256color'
+bind \cx\ce edit_command_buffer
 
 # Add to PATH
 fish_add_path /usr/sbin
