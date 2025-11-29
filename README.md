@@ -64,6 +64,7 @@
 | `ALT + Q` | Next workspace |
 | `ALT + Tab` | Previous workspace |
 | `ALT + Arrow Keys` | Move focus between windows |
+| `ALT + SHIFT + Arrow Keys` | Resize window splits |
 | `ALT + SPACE` | Toggle floating mode |
 | `ALT + P` | Open application menu (rofi) |
 | `ALT + W` | Increase volume by 10% |

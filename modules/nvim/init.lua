@@ -102,7 +102,9 @@ vim.lsp.enable('rust_analyzer')
 -- zls for Zig
 vim.g.zig_fmt_autosave = 0
 vim.lsp.config('zls', {
+  root_markers = { 'build.zig' },
   cmd = { '/usr/local/bin/zls' },
+  filetypes = { "zig" },
   settings = {
     zls = {
       semantic_tokens = "partial",
