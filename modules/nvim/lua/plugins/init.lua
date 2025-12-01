@@ -40,30 +40,6 @@ return {
   },
 
   {
-    "williamboman/mason-lspconfig.nvim",
-    config = function()
-      require("mason-lspconfig").setup {
-        ensure_installed = { "clangd", "rust_analyzer" }
-      }
-    end
-  },
-
-  {
-    "neovim/nvim-lspconfig",
-  },
-
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server", "stylua",
-        "html-lsp", "css-lsp" , "prettier",
-        "clang", "rust-analyzer"
-      },
-    },
-  },
-
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = { "lua", "rust", "cpp" },
