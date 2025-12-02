@@ -16,7 +16,7 @@ import qs.configuration
 Rectangle {
   Layout.alignment: Qt.AlignHCenter
   anchors.horizontalCenter: parent.horizontalCenter
-  implicitHeight: childrenRect.height + 28
+  implicitHeight: childrenRect.height + 34
   width: 24
   radius: 2
   color: (hoverHandler.hovered) ? Colors.workspaceBackgroundHover : Colors.moduleBackground
@@ -35,49 +35,21 @@ Rectangle {
     spacing: 3
 
     ColumnLayout {
-      spacing: -3
+      spacing: 3
 
       Repeater {
         model: Hyprland.workspaces
 
-        Item {
+        Rectangle {
           required property var modelData
           property bool hovered: false
 
-          width: 12
-          Layout.preferredHeight: modelData.active ? 40 : 15
+          width: 4
+          Layout.preferredHeight: modelData.active ? 36 : 12
           Layout.alignment: Qt.AlignHCenter
+          radius: 1
 
-          Shape {
-            anchors.centerIn: parent
-            width: 8
-            height: parent.height
-            antialiasing: true
-            smooth: true
-            layer.enabled: true
-            layer.samples: 8
-
-            ShapePath {
-              fillColor: (modelData.active || parent.hovered) ? Colors.workspaceActive : Colors.workspaceInactive
-              strokeColor: "transparent"
-              strokeWidth: 0
-
-              startX: 0   // top-left
-              startY: 6   // offset down
-
-              PathLine { x: 8; y: 0 }         // top-right (up and right)
-              PathLine { x: 8; y: height - 6 } // bottom-right (straight down, offset up)
-              PathLine { x: 0; y: height }    // bottom-left (down and left)
-              PathLine { x: 0; y: 6 }         // back to start (straight up)
-            }
-          }
-
-//          Behavior on Layout.preferredHeight {
-//            NumberAnimation {
-//              duration: 160
-//              easing.type: Easing.InOutQuart
-//            }
-//          }
+          color: (modelData.active || hovered) ? Colors.workspaceActive : Colors.workspaceInactive
 
           MouseArea {
             anchors.fill: parent
