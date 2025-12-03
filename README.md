@@ -29,11 +29,21 @@
     </td>
   </tr>
 </table>
+<table>
+<tr>
+  <td>
+    <img src="./assets/nord2.png" height=275 />
+    <img src="./assets/nord1.png" height=275 />
+  </td>
+</tr>
+</table>
 </div>
 
 <details>
     <summary> Full view (Older themes also listed and available in git history, click to expand) </summary>
     <p align="center">
+        <img src="./assets/nord2.png" />
+        <img src="./assets/nord1.png" />
         <img src="./assets/4.png" />
         <img src="./assets/x.png" />
         <img src="./assets/1.png" />
