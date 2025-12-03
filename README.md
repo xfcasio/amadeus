@@ -1,3 +1,5 @@
+<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
+
 <p align="center">
         <img src="https://readme-typing-svg.demolab.com/?font=Cartograph%20CF%20Italic&weight=700&size=98&duration=1400&pause=0&color=BE7E78&background=000A0E&center=true&vCenter=true&width=700&height=170&repeat=false&lines=Amadeus"><br/>
         <img src="https://img.shields.io/badge/WM-Hyprland-blue?colorA=00070B&colorB=F26E74&style=for-the-badge" />
@@ -105,3 +107,5 @@
 | `Visual` | `SHIFT + Up` | Move selected text up |
 | `Visual` | `SHIFT + Down` | Move selected text down |
 </div>
+
+<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
