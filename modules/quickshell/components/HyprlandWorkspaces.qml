@@ -49,7 +49,11 @@ Rectangle {
           Layout.alignment: Qt.AlignHCenter
           radius: 1
 
-          color: (modelData.active || hovered) ? Colors.workspaceActive : Colors.workspaceInactive
+          color: modelData.active
+            ? Colors.workspaceActive
+            : hoverHandler.hovered
+              ? Colors.workspaceHover
+              : Colors.workspaceInactive
 
           MouseArea {
             anchors.fill: parent
