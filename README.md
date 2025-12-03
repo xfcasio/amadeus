@@ -32,8 +32,8 @@
 <table>
 <tr>
   <td>
-    <img src="./assets/nord2.png" height=210 />
-    <img src="./assets/nord1.png" height=210 />
+    <img src="./assets/nord2.png" height=220 />
+    <img src="./assets/nord1.png" height=220 />
   </td>
 </tr>
 </table>
