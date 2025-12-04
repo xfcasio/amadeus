@@ -44,8 +44,8 @@
 <details>
     <summary> <samp> Full view (Older themes also listed and available in git history, click to expand) </samp> </summary>
     <p align="center">
-        <img src="./assets/nord2.png" />
-        <img src="./assets/nord1.png" />
+        <img src="./assets/nord-2.png" />
+        <img src="./assets/nord-1.png" />
         <img src="./assets/4.png" />
         <img src="./assets/x.png" />
         <img src="./assets/1.png" />
