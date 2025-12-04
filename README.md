@@ -10,7 +10,7 @@
                 <img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white" />
         </a>
         <a href="https://discord.gg/BJtTBNYHpp" alt="Linux and Programming Community">
-                <img src="https://img.shields.io/badge/COMMUNITY-DISCORD SERVER-blue?colorA=00070B&colorB=5661EA&style=for-the-badge" /> <br>
+                <img src="https://img.shields.io/badge/COMMUNITY-DISCORD SERVER-blue?colorA=00070B&colorB=5661EA&logo=discord&style=for-the-badge" /> <br>
         </a> <br>
 </p>
 
