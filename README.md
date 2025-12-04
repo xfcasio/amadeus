@@ -20,6 +20,14 @@
     <tr> <td> <img src="./assets/4.png" /> </td> </tr>
   </table>
   <table>
+    <tr>
+      <td>
+        <img src="./assets/nord2.png" height=220 />
+        <img src="./assets/nord1.png" height=220 />
+      </td>
+    </tr>
+  </table>
+  <table>
   <tr>
     <td>
       <img src="./assets/x.png"" />
@@ -30,14 +38,6 @@
       <img src="./assets/3.png" height=510 />
     </td>
   </tr>
-</table>
-<table>
-<tr>
-  <td>
-    <img src="./assets/nord2.png" height=220 />
-    <img src="./assets/nord1.png" height=220 />
-  </td>
-</tr>
 </table>
 </div>
 
