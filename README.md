@@ -42,7 +42,7 @@
 </div>
 
 <details>
-    <summary> Full view (Older themes also listed and available in git history, click to expand) </summary>
+    <summary> <samp> Full view (Older themes also listed and available in git history, click to expand) </samp> </summary>
     <p align="center">
         <img src="./assets/nord2.png" />
         <img src="./assets/nord1.png" />
@@ -67,27 +67,27 @@
 
 | Keybind | Action |
 |:---------:|:--------:|
-| `ALT + SHIFT + Return` | Open terminal (alacritty) |
-| `CTRL + SHIFT + Q` | Kill active window |
-| `ALT + [1-9]` | Switch to workspace 1-9 |
-| `ALT + 0` | Switch to workspace 10 |
-| `ALT + SHIFT + [1-9]` | Move window to workspace 1-9 |
-| `ALT + SHIFT + 0` | Move window to workspace 10 |
-| `ALT + Q` | Next workspace |
-| `ALT + Tab` | Previous workspace |
-| `ALT + Arrow Keys` | Move focus between windows |
-| `ALT + SHIFT + Arrow Keys` | Resize window splits |
-| `ALT + SPACE` | Toggle floating mode |
-| `ALT + P` | Open application menu (rofi) |
-| `ALT + W` | Increase volume by 10% |
-| `ALT + D` | Decrease volume by 10% |
-| `ALT + T` | Run password manager (getpass) |
-| `ALT + M` | Create mini floating window (30% size, pinned) |
-| `ALT + S` | Toggle special workspace (scratchpad) |
-| `ALT + SHIFT + S` | Move window to special workspace |
-| `ALT + Mouse Left` | Move window |
-| `ALT + Mouse Right` | Resize window |
-| `ALT + SHIFT + Q` | Exit Hyprland |
+| <samp> `ALT + SHIFT + Return` </samp> | <samp> Open terminal (alacritty) </samp> |
+| <samp> `CTRL + SHIFT + Q` </samp> | <samp> Kill active window </samp> |
+| <samp> `ALT + [1-9]` </samp> | <samp> Switch to workspace 1-9 </samp> |
+| <samp> `ALT + 0` </samp> | <samp> Switch to workspace 10 </samp> |
+| <samp> `ALT + SHIFT + [1-9]` </samp> | <samp> Move window to workspace 1-9 </samp> |
+| <samp> `ALT + SHIFT + 0` </samp> | <samp> Move window to workspace 10 </samp> |
+| <samp> `ALT + Q` </samp> | <samp> Next workspace </samp> |
+| <samp> `ALT + Tab` </samp> | <samp> Previous workspace </samp> |
+| <samp> `ALT + Arrow Keys` </samp> | <samp> Move focus between windows </samp> |
+| <samp> `ALT + SHIFT + Arrow Keys` </samp> | <samp> Resize window splits </samp> |
+| <samp> `ALT + SPACE` </samp> | <samp> Toggle floating mode </samp> |
+| <samp> `ALT + P` </samp> | <samp> Open application menu (rofi) </samp> |
+| <samp> `ALT + W` </samp> | <samp> Increase volume by 10% </samp> |
+| <samp> `ALT + D` </samp> | <samp> Decrease volume by 10% </samp> |
+| <samp> `ALT + T` </samp> | <samp> Run password manager (getpass) </samp> |
+| <samp> `ALT + M` </samp> | <samp> Create mini floating window (30% size, pinned) </samp> |
+| <samp> `ALT + S` </samp> | <samp> Toggle special workspace (scratchpad) </samp> |
+| <samp> `ALT + SHIFT + S` </samp> | <samp> Move window to special workspace </samp> |
+| <samp> `ALT + Mouse Left` </samp> | <samp> Move window </samp> |
+| <samp> `ALT + Mouse Right` </samp> | <samp> Resize window </samp> |
+| <samp> `ALT + SHIFT + Q` </samp> | <samp> Exit Hyprland </samp> |
 </div>
 
 <div align="center">
@@ -95,17 +95,17 @@
 
 | Mode | Keybind | Action |
 |:---------:|:--------:|:--------:|
-| `Normal` | `Alt + K` | Open floating terminal |
-| `Normal` | `Alt + L` | Open side terminal |
-| `Normal` | `CTRL + X` | Scroll down (remapped from CTRL+E) |
-| `Normal` | `CTRL + M` | Scroll up (remapped from CTRL+Y) |
-| `Normal` | `gd` | Go to LSP definition (overridden in markdown for Obsidian links) |
-| `Normal` | `gr` | Show LSP references |
-| `Normal` | `va` | New obsidian.nvim note |
-| `Normal` | `vs` | Search obsidian.nvim notes in vault |
-| `Visual` | `x` | Turn selection into obsidian.nvim link |
-| `Visual` | `SHIFT + Up` | Move selected text up |
-| `Visual` | `SHIFT + Down` | Move selected text down |
+| <samp> `Normal` </samp> | <samp> `Alt + K` </samp> | <samp> Open floating terminal </samp> |
+| <samp> `Normal` </samp> | <samp> `Alt + L` </samp> | <samp> Open side terminal </samp> |
+| <samp> `Normal` </samp> | <samp> `CTRL + X` </samp> | <samp> Scroll down (remapped from CTRL+E) </samp> |
+| <samp> `Normal` </samp> | <samp> `CTRL + M` </samp> | <samp> Scroll up (remapped from CTRL+Y) </samp> |
+| <samp> `Normal` </samp> | <samp> `gd` </samp> | <samp> Go to LSP definition (overridden in markdown for Obsidian links) </samp> |
+| <samp> `Normal` </samp> | <samp> `gr` </samp> | <samp> Show LSP references </samp> |
+| <samp> `Normal` </samp> | <samp> `va` </samp> | <samp> New obsidian.nvim note </samp> |
+| <samp> `Normal` </samp> | <samp> `vs` </samp> | <samp> Search obsidian.nvim notes in vault </samp> |
+| <samp> `Visual` </samp> | <samp> `x` </samp> | <samp> Turn selection into obsidian.nvim link </samp> |
+| <samp> `Visual` </samp> | <samp> `SHIFT + Up` </samp> | <samp> Move selected text up </samp> |
+| <samp> `Visual` </samp> | <samp> `SHIFT + Down` </samp> | <samp> Move selected text down </samp> |
 </div>
 
 <h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
