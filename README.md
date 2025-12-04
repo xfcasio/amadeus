@@ -1,7 +1,7 @@
 <h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
 
 <p align="center">
-        <img src="https://readme-typing-svg.demolab.com/?font=Cartograph%20CF%20Italic&weight=700&size=98&duration=1400&pause=0&color=BE7E78&background=000A0E&center=true&vCenter=true&width=700&height=170&repeat=false&lines=Amadeus"><br/>
+        <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=128&duration=1400&pause=0&color=BE7E78&background=000A0E&center=true&vCenter=true&width=700&height=170&repeat=false&lines=Amadeus"><br/>
         <img src="https://img.shields.io/badge/WM-Hyprland-blue?colorA=00070B&colorB=F26E74&style=for-the-badge" />
         <img src="https://img.shields.io/badge/BAR-Quickshell-blue?colorA=00070B&colorB=78B8A2&style=for-the-badge" />
         <img src="https://img.shields.io/badge/EDITOR-Neovim-blue?colorA=00070B&colorB=C488EC&style=for-the-badge" />
@@ -15,7 +15,7 @@
 </p>
 
 <div align="center">
-    <img src="https://readme-typing-svg.demolab.com/?font=Cartograph%20CF%20Italic&weight=700&size=50&duration=1400&pause=0&color=6791C9&background=000A0E&center=true&vCenter=true&width=600&height=100&repeat=false&lines=Gallery"><br/>
+    <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=80&duration=1400&pause=0&color=6791C9&background=000A0E&center=true&vCenter=true&width=600&height=120&repeat=false&lines=Gallery"><br/>
   <table>
     <tr> <td> <img src="./assets/4.png" /> </td> </tr>
   </table>
@@ -63,7 +63,7 @@
 ##
 
 <div align="center">
-    <img src="https://readme-typing-svg.demolab.com/?font=Cartograph%20CF%20Italic&weight=700&size=50&duration=1400&pause=0&color=AE7CD2&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Hyprland%20Keybinds"><br/>
+    <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=70&duration=1400&pause=0&color=AE7CD2&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Hyprland%20Keybinds"><br/>
 
 | Keybind | Action |
 |:---------:|:--------:|
@@ -91,7 +91,7 @@
 </div>
 
 <div align="center">
-    <img src="https://readme-typing-svg.demolab.com/?font=Cartograph%20CF%20Italic&weight=700&size=50&duration=1400&pause=0&color=78B892&background=000A0E&center=true&vCenter=true&width=800&height=100&repeat=false&lines=Custom%20NVChad%20Keybinds"><br/>
+    <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=78B892&background=000A0E&center=true&vCenter=true&width=800&height=100&repeat=false&lines=Custom%20NvChad%20Keybinds"><br/>
 
 | Mode | Keybind | Action |
 |:---------:|:--------:|:--------:|
