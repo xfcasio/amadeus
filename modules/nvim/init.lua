@@ -58,7 +58,7 @@ end)
 
 require("nvim-tree").setup({
   view = {
-    width = 24,
+    width = 26,
   },
 
   hijack_directories = {
@@ -132,10 +132,12 @@ vim.lsp.enable('c3_lsp')
 -- Diagnostic configuration (unchanged)
 vim.diagnostic.config({
   severity_sort = true,
-  signs = {
-    severity = { min = vim.diagnostic.severity.ERROR }
+  virtual_text = false,
+  virtual_lines = {
+    only_current_line = false,
   },
-  virtual_text = {
+
+  signs = {
     severity = { min = vim.diagnostic.severity.ERROR }
   },
   float = {
