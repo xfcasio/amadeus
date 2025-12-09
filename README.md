@@ -16,7 +16,8 @@
 <br/>
 
 <div align="center">
-    <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=80&duration=1400&pause=0&color=6791C9&background=000A0E&center=true&vCenter=true&width=600&height=120&repeat=false&lines=Gallery"><br/>
+  <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=80&duration=1400&pause=0&color=6791C9&background=000A0E&center=true&vCenter=true&width=600&height=120&repeat=false&lines=Gallery"><br/>
+  <br/>
   <table>
     <tr> <td> <img src="./assets/4.png" /> </td> </tr>
   </table>
@@ -66,6 +67,7 @@
 
 <div align="center">
     <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=70&duration=1400&pause=0&color=AE7CD2&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Hyprland%20Keybinds"><br/>
+<br/>
 
 | Keybind | Action |
 |:---------:|:--------:|
@@ -91,9 +93,11 @@
 | <samp> `ALT + Mouse Right` </samp> | <samp> Resize window </samp> |
 | <samp> `ALT + SHIFT + Q` </samp> | <samp> Exit Hyprland </samp> |
 </div>
+<br/>
 
 <div align="center">
     <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=78B892&background=000A0E&center=true&vCenter=true&width=800&height=100&repeat=false&lines=Custom%20NvChad%20Keybinds"><br/>
+<br/>
 
 | Mode | Keybind | Action |
 |:---------:|:--------:|:--------:|
@@ -115,22 +119,26 @@
 
 <div align="center">
 <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=50&duration=1400&pause=0&color=F26E74&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Core%20Dependencies"><br/>
-</div>
+<br/>
 
-- **Hyprland** - <samp>Wayland compositor (window manager)</samp>
-- **Quickshell** - <samp>QML-based status bar and widgets</samp>
-- **Qt6-5compat** - <samp>Qt5 compatibility module for Qt6</samp>
-- **Alacritty** - <samp>Terminal emulator (default terminal)</samp>
-- **Fish** - <samp>Shell (default shell, though zsh configs are provided)</samp>
-- **Rofi** - <samp>Application launcher</samp>
-- **Neovim** - <samp>Text editor</samp>
-- **Fontconfig** - <samp>Font management (`fc-cache`)</samp>
+| Package Name | Description |
+|:-------------|:------------------:|
+| **hyprland** | <samp>Wayland compositor (window manager)</samp> |
+| **quickshell** | <samp>QML-based status bar and widgets</samp> |
+| **qt6-5compat** | <samp>Qt5 compatibility module for Qt6</samp> |
+| **alacritty** | <samp>Terminal emulator (default terminal)</samp> |
+| **fish** | <samp>Shell (default shell, though zsh configs are provided)</samp> |
+| **rofi** | <samp>Application launcher (make sure to install wayland version)</samp> |
+| **neovim** | <samp>Text editor</samp> |
+| **fontconfig** | <samp>Font management (`fc-cache`)</samp> |
+</div>
 
 <br/>
 
 <div align="center">
 <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=E9967E&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Quick%20Install"><br/>
 </div>
+<br/>
 
 <pre><code>
 git clone https://github.com/xfcasio/amadeus.git ~/amadeus
@@ -151,17 +159,19 @@ The installation script will automatically:
 <div align="center">
 <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=79AAEB&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Post-Installation"><br/>
 </div>
+<br/>
 
-1. **Set your profile picture** (optional):
+1. **Set your profile picture** (optional):<br/>
    <code>cp your-picture.jpg ~/.face.jpg</code>
 
-3. **Restart Session** to apply all changes: <br/>
+3. **Restart Session** to apply all changes:<br/>
    <samp>leave your desktop session and log into a hyprland session </samp>
 
 <br/>
 
 <div align="center">
 <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=78B892&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Configuration%20Files"><br/>
+<br/>
 
 The installer creates symbolic links to the following locations:
 
@@ -181,6 +191,7 @@ The installer creates symbolic links to the following locations:
 <div align="center">
 <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=A9A9A9&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Troubleshooting"><br/>
 </div>
+<br/>
 
 - <samp> Make sure all dependencies are installed before running the installer </samp>
 - <samp> For display issues, check your monitor configuration in `~/.config/hypr/hyprland.conf</samp>
