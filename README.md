@@ -117,14 +117,14 @@
 <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=50&duration=1400&pause=0&color=F26E74&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Core%20Dependencies"><br/>
 </div>
 
-- **Hyprland** - Wayland compositor (window manager)
-- **Quickshell** - QML-based status bar and widgets
-- **Qt6-5compat** - Qt5 compatibility module for Qt6
-- **Alacritty** - Terminal emulator (default terminal)
-- **Fish** - Shell (default shell, though zsh configs are provided)
-- **Rofi** - Application launcher
-- **Neovim** - Text editor
-- **Fontconfig** - Font management (`fc-cache`)
+- **Hyprland** - <samp>Wayland compositor (window manager)</samp>
+- **Quickshell** - <samp>QML-based status bar and widgets</samp>
+- **Qt6-5compat** - <samp>Qt5 compatibility module for Qt6</samp>
+- **Alacritty** - <samp>Terminal emulator (default terminal)</samp>
+- **Fish** - <samp>Shell (default shell, though zsh configs are provided)</samp>
+- **Rofi** - <samp>Application launcher</samp>
+- **Neovim** - <samp>Text editor</samp>
+- **Fontconfig** - <samp>Font management (`fc-cache`)</samp>
 
 <br/>
 
@@ -140,11 +140,11 @@ chmod +x install.sh
 </code></pre>
 
 The installation script will automatically:
-- Create symbolic links for all configuration files
-- Install fonts to `/usr/share/fonts`
-- Install utility scripts to `/usr/local/bin`
-- Set up your profile picture symlink
-- Configure the wallpaper
+- <samp>Create symbolic links for all configuration files</samp>
+- <samp>Install fonts to `/usr/share/fonts`</samp>
+- <samp>Install utility scripts to `/usr/local/bin`</samp>
+- <samp>Set up your profile picture symlink</samp>
+- <samp>Configure the wallpaper</samp>
 
 <br/>
 
