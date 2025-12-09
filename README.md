@@ -114,21 +114,21 @@
 <h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
 
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=50&duration=1400&pause=0&color=F26E74&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Core%20Dependencies"><br/>  
-</div>  
-  
-- **Hyprland** - Wayland compositor (window manager)  
-- **Quickshell** - QML-based status bar and widgets  
-- **Qt6-5compat** - Qt5 compatibility module for Qt6  
-- **Alacritty** - Terminal emulator (default terminal)  
-- **Fish** - Shell (default shell, though zsh configs are provided)  
-- **Rofi** - Application launcher  
-- **Neovim** - Text editor  
+<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=50&duration=1400&pause=0&color=F26E74&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Core%20Dependencies"><br/>
+</div>
+
+- **Hyprland** - Wayland compositor (window manager)
+- **Quickshell** - QML-based status bar and widgets
+- **Qt6-5compat** - Qt5 compatibility module for Qt6
+- **Alacritty** - Terminal emulator (default terminal)
+- **Fish** - Shell (default shell, though zsh configs are provided)
+- **Rofi** - Application launcher
+- **Neovim** - Text editor
 - **Fontconfig** - Font management (`fc-cache`)
 
 <br/>
-  
-<div align="center">  
+
+<div align="center">
 <img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=E9967E&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Quick%20Install"><br/>
 </div>
 
@@ -138,7 +138,7 @@ cd ~/amadeus
 chmod +x install.sh
 ./install.sh
 </code></pre>
-  
+
 The installation script will automatically:
 - Create symbolic links for all configuration files
 - Install fonts to `/usr/share/fonts`
@@ -148,45 +148,45 @@ The installation script will automatically:
 
 <br/>
 
-<div align="center">  
-<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=79AAEB&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Post-Installation"><br/>  
-</div>  
-  
-1. **Set your profile picture** (optional):  
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=79AAEB&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Post-Installation"><br/>
+</div>
+
+1. **Set your profile picture** (optional):
    <code>cp your-picture.jpg ~/.face.jpg</code>
-  
+
 3. **Restart Session** to apply all changes: <br/>
    <samp>leave your desktop session and log into a hyprland session </samp>
 
 <br/>
 
-<div align="center">  
-<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=78B892&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Configuration%20Files"><br/>  
-</div>  
-  
-The installer creates symbolic links to the following locations:  
-  
-| Component | Target Location |  
-|-----------|-----------------|  
-| Hyprland | `~/.config/hypr` |  
-| Quickshell | `~/.config/quickshell` |  
-| Alacritty | `~/.config/alacritty/alacritty.toml` |  
-| Rofi | `~/.config/rofi` |  
-| Neovim | `~/.config/nvim` |  
-| Fonts | `/usr/share/fonts` |  
-| Utility Scripts | `/usr/local/bin` |  
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=78B892&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Configuration%20Files"><br/>
+
+The installer creates symbolic links to the following locations:
+
+| Component | Target Location |
+|-----------|-----------------|
+| Hyprland | `~/.config/hypr` |
+| Quickshell | `~/.config/quickshell` |
+| Alacritty | `~/.config/alacritty/alacritty.toml` |
+| Rofi | `~/.config/rofi` |
+| Neovim | `~/.config/nvim` |
+| Fonts | `/usr/share/fonts` |
+| Utility Scripts | `/usr/local/bin` |
+</div>
 
 <br/>
 
-<div align="center">  
-<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=A9A9A9&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Troubleshooting"><br/>  
-</div>  
-  
-- Make sure all dependencies are installed before running the installer  
-- For display issues, check your monitor configuration in `~/.config/hypr/hyprland.conf`
-- Check the Issues tab. If you've encountered a bug in amadeus, there's a chance It's an open issue with a full/temp solution mentioned
-- If it's a bug in amadeus and not already reported in Issues, Open a new Issue for it so I can fix it!
-- If your issue is still not resolved, join our [Discord Linux/Ricing/Programming community](https://discord.com/invite/XGAx76nDJt) and ask for help there.
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=60&duration=1400&pause=0&color=A9A9A9&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Troubleshooting"><br/>
+</div>
+
+- <samp> Make sure all dependencies are installed before running the installer </samp>
+- <samp> For display issues, check your monitor configuration in `~/.config/hypr/hyprland.conf</samp>
+- <samp> Check the Issues tab. If you've encountered a bug in amadeus, there's a chance It's an open issue with a full/temp solution mentione</samp>
+- <samp> If it's a bug in amadeus and not already reported in Issues, Open a new Issue for it so I can fix it</samp>
+- <samp> If your issue is still not resolved, join our [Discord Linux/Ricing/Programming community](https://discord.com/invite/XGAx76nDJt) and ask for help there</samp>
 <br/>
 
 <h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
