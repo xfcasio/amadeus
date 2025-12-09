@@ -193,11 +193,19 @@ The installer creates symbolic links to the following locations:
 </div>
 <br/>
 
-- <samp> Make sure all dependencies are installed before running the installer </samp>
-- <samp> For display issues, check your monitor configuration in `~/.config/hypr/hyprland.conf</samp>
-- <samp> Check the Issues tab. If you've encountered a bug in amadeus, there's a chance It's an open issue with a full/temp solution mentione</samp>
+- <samp> Make sure all dependencies are installed before running the installer</samp>
+- <samp> For display issues, check your monitor configuration in `~/.config/hypr/hyprland.conf` (lines 11-24)</samp>
+- <samp> Check the Issues tab. If you've encountered a bug in amadeus, there's a chance It's an open issue with a full/temp solution mentioned</samp>
 - <samp> If it's a bug in amadeus and not already reported in Issues, Open a new Issue for it so I can fix it</samp>
 - <samp> If your issue is still not resolved, join our [Discord Linux/Ricing/Programming community](https://discord.com/invite/XGAx76nDJt) and ask for help there</samp>
 <br/>
+<br/>
+
+<div align="center">
+<img src="https://readme-typing-svg.demolab.com/?font=Parisienne&size=50&duration=1400&pause=0&color=F26E74&background=000A0E&center=true&vCenter=true&width=700&height=100&repeat=false&lines=Contribute%20%F0%9F%92%99"><br/>
+<samp>There are many ways you can contribute from opening issues, starting discussions, and making suggestions in the Issues tab to sending pull requests containing enhancements, fixes, etc. etc.<br/>
+Which are all are welcomed and encouraged.</samp>
+</div>
+<br>
 
 <h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
