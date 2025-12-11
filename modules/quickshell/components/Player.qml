@@ -49,6 +49,15 @@ Rectangle {
         } else playing = false
       }
     }
+
+    stderr: SplitParser {
+      onRead: err => {
+        if (err === "No player could handle this command") {
+          artUrl = `file:///home/${username}/.config/quickshell/svg/player-background.png`
+          playing = false
+        }
+      }
+    }
   }
 
   Process {
@@ -64,8 +73,10 @@ Rectangle {
 
     stderr: SplitParser {
       onRead: err => {
-        if (err === "No player could handle this command")
+        if (err === "No player could handle this command") {
           artUrl = `file:///home/${username}/.config/quickshell/svg/player-background.png`
+          playing = false
+        }
       }
     }
   }
@@ -78,7 +89,7 @@ Rectangle {
   }
 
   Timer {
-    interval: 4000
+    interval: 1000
     running: true
     repeat: true
     onTriggered: { statusUpdater.running = true }
