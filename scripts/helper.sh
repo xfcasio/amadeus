@@ -25,11 +25,6 @@ dots-install::quickshell() {
   ln -fs "$AMADEUS_DIR/modules/quickshell" "/home/$USER/.config/"
 }
 
-dots-install::waybar() {
-  echo "* creating waybar symbolic link"
-  ln -fs "$AMADEUS_DIR/modules/waybar" "/home/$USER/.config/"
-}
-
 dots-install::fabric() {
   echo "* creating fabric symbolic link"
   ln -fs "$AMADEUS_DIR/modules/fabric" "/home/$USER/.config/"
