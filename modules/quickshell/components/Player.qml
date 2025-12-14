@@ -75,7 +75,6 @@ Rectangle {
       onRead: err => {
         if (err === "No player could handle this command") {
           artUrl = `file:///home/${username}/.config/quickshell/svg/player-background.png`
-          playing = false
         }
       }
     }
