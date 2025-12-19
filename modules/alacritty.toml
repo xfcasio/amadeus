@@ -7,7 +7,7 @@ duration = 0
 draw_bold_text_with_bright_colors = false
 
 [colors.bright]
-black = "0x111A1F"
+black = "0x333B3F"
 blue = "0x78B892"
 cyan = "0x78B892"
 green = "0x789978"
@@ -22,7 +22,7 @@ cursor = "#9C9CA3"
 text = "0x101010"
 
 [colors.normal]
-black = "0x111A1F"
+black = "0x333B3F"
 blue = "0x79AAEB"
 cyan = "0x78B892"
 green = "0x78B892"
