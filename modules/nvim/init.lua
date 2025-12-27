@@ -149,6 +149,17 @@ vim.diagnostic.config({
 })
 
 
+local cmp = require("cmp")
+cmp.setup({
+  mapping = {
+    ["<C-k>"] = cmp.mapping.select_prev_item(),
+    ["<C-j>"] = cmp.mapping.select_next_item(),
+
+    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+  },
+})
+
+
 -- NvimTree :Open command (with xdg-open)
 vim.api.nvim_create_user_command("Open", function()
   local api = require("nvim-tree.api")
