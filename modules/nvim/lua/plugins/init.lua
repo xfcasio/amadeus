@@ -159,7 +159,7 @@ return {
       smear_insert_mode = true,
 
       gradient_exponent = 0,
-      particles_enabled = true,
+      particles_enabled = false,
       particle_spread = 1,
       particles_per_second = 100,
       particles_per_length = 100,
@@ -172,14 +172,14 @@ return {
     },
   },
 
---  {
---    "karb94/neoscroll.nvim",
---    opts = {
---      performance_mode = true,
---      duration_multiplier = 2.0,
---      easing = "quadratic",
---    },
---  },
+  {
+    "karb94/neoscroll.nvim",
+    opts = {
+      performance_mode = true,
+      duration_multiplier = 2.0,
+      easing = "quadratic",
+    },
+  },
 
 --  {
 --    "IogaMaster/neocord",
