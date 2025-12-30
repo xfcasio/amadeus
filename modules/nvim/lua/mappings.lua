@@ -92,7 +92,7 @@ local function link_selected_text_with_obsidian()
 end
 
 -- Keymap: Visual mode "x" → replace selection with Obsidian link
-vim.keymap.set("x", "x", link_selected_text_with_obsidian, {
+map("x", "x", link_selected_text_with_obsidian, {
   desc = "Replace selection with Obsidian link",
   silent = true,
 })

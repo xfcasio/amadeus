@@ -36,6 +36,8 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+local cmp = require("cmp")
+
 function Center_cursor()
     local pos = vim.fn.getpos('.')
     vim.cmd('normal! zz')
@@ -149,13 +151,28 @@ vim.diagnostic.config({
 })
 
 
-local cmp = require("cmp")
 cmp.setup({
   mapping = {
     ["<C-k>"] = cmp.mapping.select_prev_item(),
     ["<C-j>"] = cmp.mapping.select_next_item(),
 
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
+
+    ["<Down>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      else
+        fallback()
+      end
+    end, { "i", "s" }),
+
+    ["<Up>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      else
+        fallback()
+      end
+    end, { "i", "s" }),
   },
 })
 
