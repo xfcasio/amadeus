@@ -72,6 +72,7 @@ M.base46 = {
   theme = 'rxyhn',
 
   hl_override = {
+    ["StorageClass"] = { fg = "#BC83E3" },
     ["Function"] = { fg = "#BC83E3" },
     ["Statement"] = { fg = "#7F98E8" },
     ["@variable"] = { fg = "#E6930C" },

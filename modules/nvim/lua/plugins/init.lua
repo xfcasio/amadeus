@@ -130,8 +130,9 @@ return {
   },
 
   {
-    "ziglang/zig.vim",
+    "https://codeberg.org/ziglang/zig.vim",
     enabled = true,
+    lazy = false,
   },
 
   {
