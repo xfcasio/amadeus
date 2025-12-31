@@ -391,5 +391,5 @@ columns = 100
 lines = 85
 
 [window.padding]
-x = 14
+x = 30
 y = 14
