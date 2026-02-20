@@ -383,7 +383,7 @@ program = "fish"
 [window]
 decorations = "buttonless"
 dynamic_padding = true
-opacity = 1.00
+opacity = 0.90
 startup_mode = "Windowed"
 
 [window.dimensions]

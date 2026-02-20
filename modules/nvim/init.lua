@@ -131,6 +131,13 @@ vim.lsp.config('c3_lsp', {
 })
 vim.lsp.enable('c3_lsp')
 
+vim.lsp.config('ols', {
+  cmd = { "/usr/local/bin/ols-x86_64-unknown-linux-gnu" },
+  filetypes = { "odin" },
+  settings = {},
+})
+vim.lsp.enable('ols')
+
 -- Diagnostic configuration (unchanged)
 vim.diagnostic.config({
   severity_sort = true,
