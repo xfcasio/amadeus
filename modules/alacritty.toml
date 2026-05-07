@@ -50,7 +50,7 @@ size = 6
 
 [font.bold]
 family = "lemon"
-#family = "lemon"
+#family = "Terminus"
 style = "Bold"
 
 [font.glyph_offset]

@@ -120,3 +120,5 @@ for executable in $grc_plugin_execs
         end
     end
 end
+
+fenv source ~/.config/guix/current/etc/profile
