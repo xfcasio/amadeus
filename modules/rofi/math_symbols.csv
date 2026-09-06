@@ -1,0 +1,155 @@
+∂ partial, \partial, partial differential
+∇ nabla, \nabla, del
+∆ Delta, \Delta, increment
+∫ int, \int, integral
+∬ iint, \iint, double integral
+∭ iiint, \iiint, triple integral
+∮ oint, \oint, contour integral
+∯ oiint, \oiint, surface integral
+∰ oiiint, \oiiint, volume integral
+∑ sum, \sum, summation
+∏ prod, \prod, product
+√ sqrt, \sqrt, square root
+∛ cbrt, \cbrt, cube root
+∜ fourthroot, fourth root
+∞ infty, \infty, infinity
+′ prime, \prime, derivative
+″ dprime, \dprime, double prime
+‴ trprime, \trprime, triple prime
+− minus, \minus, minus sign
+± pm, \pm, plus-minus
+∓ mp, \mp, minus-or-plus
+× times, \times, multiplication
+÷ div, \div, division
+⋅ cdot, \cdot, dot operator
+∗ ast, \ast, asterisk operator
+∘ circ, \circ, ring operator
+∕ divslash, division slash
+≠ neq, \neq, \ne
+≈ approx, \approx, almost equal
+≡ equiv, \equiv, identical to
+≅ isomorphic, \cong, isomorphic to
+≤ leq, \leq, \le
+≥ geq, \geq, \ge
+≪ ll, \ll, much less than
+≫ gg, \gg, much greater than
+∝ propto, \propto, proportional to
+∼ sim, \sim, tilde operator
+∀ forall, \forall, for all
+∃ exists, \exists, there exists
+∄ nexists, \nexists, there does not exist
+⟹  implies, \implies, implies
+⟹̸  nimplies, \nimply, not imply
+⟺  iff, \iff, if and only if
+∈ in, \in, element of
+∉ notin, \notin, not an element of
+∋ ni, \ni, contains as member
+∅ emptyset, \emptyset, \varnothing
+⊂ subset, \subset, subset of
+⊃ supset, \supset, superset of
+⊆ subseteq, \subseteq, subset or equal
+⊇ supseteq, \supseteq, superset or equal
+∪ cup, \cup, union
+∩ cap, \cap, intersection
+∧ land, \land, \wedge
+∨ lor, \lor, \vee
+¬ neg, \neg, \lnot
+⊢ vdash, \vdash, turnstile
+⊬ nvdash, \nvdash, does not prove
+⊕ oplus, \oplus, circled plus
+⊗ otimes, \otimes, circled times
+⊙ odot, \odot, circled dot
+⊥ perp, \perp, up tack
+∥ parallel, \parallel, parallel to
+∠ angle, \angle
+∴ therefore, \therefore
+∵ because, \because
+ℏ hbar, \hbar, reduced planck constant
+ℓ ell, \ell, script l
+ℕ N, \mathbb{N}, naturals
+ℤ Z, \mathbb{Z}, integers
+ℚ Q, \mathbb{Q}, rationals
+ℝ R, \mathbb{R}, reals
+ℂ C, \mathbb{C}, complex
+ℙ P, \mathbb{P}, primes
+ℍ H, \mathbb{H}, quaternions
+⁰ ^0, ^{0}, superscript 0
+¹ ^1, ^{1}, superscript 1
+² ^2, ^{2}, superscript 2
+³ ^3, ^{3}, superscript 3
+⁴ ^4, ^{4}, superscript 4
+⁵ ^5, ^{5}, superscript 5
+⁶ ^6, ^{6}, superscript 6
+⁷ ^7, ^{7}, superscript 7
+⁸ ^8, ^{8}, superscript 8
+⁹ ^9, ^{9}, superscript 9
+ⁿ ^n, ^{n}, superscript n
+ⁱ ^i, ^{i}, superscript i
+ʲ ^j, ^{j}, superscript j
+ᵏ ^k, ^{k}, superscript k
+⁻ ^-, ^{-}, superscript -
+⁺ ^+, ^{+}, superscript +
+₀ _0, _{0}, subscript 0
+₁ _1, _{1}, subscript 1
+₂ _2, _{2}, subscript 2
+₃ _3, _{3}, subscript 3
+₄ _4, _{4}, subscript 4
+₅ _5, _{5}, subscript 5
+₆ _6, _{6}, subscript 6
+₇ _7, _{7}, subscript 7
+₈ _8, _{8}, subscript 8
+₉ _9, _{9}, subscript 9
+ₙ _n, _{n}, subscript n
+ᵢ _i, _{i}, subscript i
+ⱼ _j, _{j}, subscript j
+ₖ _k, _{k}, subscript k
+₋ _-, _{-}, subscript -
+₊ _+, _{+}, subscript +
+Α Alpha,\Alpha,Alpha
+α alpha,\alpha,alpha
+Β Beta,\Beta,Beta
+β beta,\beta,beta
+Γ Gamma,\Gamma,Gamma
+γ gamma,\gamma,gamma
+Δ Delta,\Delta,Delta
+δ delta,\delta,delta
+Ε Epsilon,\Epsilon,Epsilon
+ε epsilon,\epsilon,epsilon
+Ζ Zeta,\Zeta,Zeta
+ζ zeta,\zeta,zeta
+Η Eta,\Eta,Eta
+η eta,\eta,eta
+Θ Theta,\Theta,Theta
+θ theta,\theta,theta
+Ι Iota,\Iota,Iota
+ι iota,\iota,iota
+Κ Kappa,\Kappa,Kappa
+κ kappa,\kappa,kappa
+Λ Lambda,\Lambda,Lambda
+λ lambda,\lambda,lambda
+Μ Mu,\Mu,Mu
+μ mu,\mu,mu
+Ν Nu,\Nu,Nu
+ν nu,\nu,nu
+Ξ Xi,\Xi,Xi
+ξ xi,\xi,xi
+Ο Omicron,\Omicron,Omicron
+ο omicron,\omicron,omicron
+Π Pi,\Pi,Pi
+π pi,\pi,pi
+Ρ Rho,\Rho,Rho
+ρ rho,\rho,rho
+Σ Sigma,\Sigma,Sigma
+σ sigma,\sigma,sigma
+Τ Tau,\Tau,Tau
+τ tau,\tau,tau
+Υ Upsilon,\Upsilon,Upsilon
+υ upsilon,\upsilon,upsilon
+Φ Phi,\Phi,Phi
+φ phi,\phi,phi
+Χ Chi,\Chi,Chi
+χ chi,\chi,chi
+Ψ Psi,\Psi,Psi
+ψ psi,\psi,psi
+Ω Omega,\Omega,Omega
+ω omega,\omega,omega

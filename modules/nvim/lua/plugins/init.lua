@@ -130,6 +130,42 @@ return {
   },
 
   {
+    'Julian/lean.nvim',
+    event = { 'BufReadPre *.lean', 'BufNewFile *.lean' },
+
+    dependencies = {
+      -- optional dependencies:
+
+      -- 'nvim-telescope/telescope.nvim', -- for Lean-specific pickers
+      -- 'andymass/vim-matchup',          -- for enhanced % motion behavior
+      -- 'andrewradev/switch.vim',        -- for switch support
+      -- 'tomtom/tcomment_vim',           -- for commenting
+    },
+
+    ---@type lean.Config
+    opts = { -- see the manual for full configuration options
+      mappings = true,
+      -- Abbreviation support
+      abbreviations = {
+        -- Enable expanding of unicode abbreviations?
+        enable = true,
+        -- additional abbreviations:
+        extra = {
+          -- Add a \wknight abbreviation to insert ♘
+          --
+          -- Note that the backslash is implied, and that you of
+          -- course may also use a snippet engine directly to do
+          -- this if so desired.
+          wknight = '♘',
+        },
+        -- Change if you don't like the backslash
+        -- (comma is a popular choice on French keyboards)
+        leader = ',',
+      },
+    }
+  },
+
+  {
     "https://codeberg.org/ziglang/zig.vim",
     enabled = true,
     lazy = false,

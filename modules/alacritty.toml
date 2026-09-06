@@ -49,8 +49,7 @@ render_timer = false
 size = 6
 
 [font.bold]
-family = "lemon"
-#family = "Terminus"
+family = "Terminus"
 style = "Bold"
 
 [font.glyph_offset]
@@ -58,11 +57,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "lemon"
+family = "Terminus"
 style = "Italic"
 
 [font.normal]
-family = "lemon"
+family = "Terminus"
 style = "Regular"
 
 [font.offset]
@@ -383,7 +382,7 @@ program = "fish"
 [window]
 decorations = "buttonless"
 dynamic_padding = true
-opacity = 0.90
+opacity = 0.98
 startup_mode = "Windowed"
 
 [window.dimensions]

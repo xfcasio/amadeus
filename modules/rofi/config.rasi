@@ -17,6 +17,11 @@ configuration {
     display-window:             "";
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
+
+  kb-remove-to-eol: "";
+  kb-accept-entry: "Return";
+  kb-row-up: "Control+k,Up";
+  kb-row-down: "Control+j,Down";
 }
 
 /*****----- Global Properties -----*****/

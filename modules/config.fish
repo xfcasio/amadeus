@@ -9,6 +9,7 @@ bind \cx\ce edit_command_buffer
 fish_add_path /usr/sbin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.cargo/bin
+fish_add_path $HOME/.elan/toolchains/leanprover--lean4---v4.30.0/bin
 # fish_add_path $HOME/.nix-profile/bin
 
 # FZF configuration

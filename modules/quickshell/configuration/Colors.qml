@@ -42,10 +42,9 @@ QtObject {
     readonly property color trayBorderHover: "#77A9A9A9"
     
     // Workspace colors
-    readonly property color workspaceBackgroundHover: "#227788AA"
-    readonly property color workspaceBorderHover: "#777788AA"
-    readonly property color workspaceActive: "#7788CA"
-    readonly property color workspaceHover: "#ff333B3F"
+    readonly property color workspaceBackgroundHover: "#11F0837F"
+    readonly property color workspaceBorderHover: "#77F0837F"
+    readonly property color workspaceActive: "#F0837F"
     readonly property color workspaceInactive: "#333B3F"
 
     // Power button colors
