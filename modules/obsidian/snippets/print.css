@@ -1,0 +1,82 @@
+/* Better PDF – Dark background for Deeper Work */
+@media print {
+  /* Force full page background */
+  html, body {
+    background: #0D1117 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Target the rendered markdown container */
+  .markdown-preview-view,
+  .markdown-rendered {
+    background-color: #0D1117 !important;
+    color: #C9D1D9 !important;
+  }
+
+  /* Make text white without touching element backgrounds */
+  p, li, span, div,
+  h1, h2, h3, h4, h5, h6,
+  em, a {
+    color: #C9D1D9 !important;
+  }
+
+  /* Keep code blocks readable */
+  pre, code {
+    color: #C9D1D9 !important;
+  }
+
+  /* ==================== MERMAID FIXES ==================== */
+  /* Main SVG container - smaller size to prevent truncation */
+  .mermaid svg {
+    display: flex;
+    justify-content: center;
+    background-color: #00000000 !important;
+    max-width: 95% !important;
+    height: auto !important;
+    transform: scale(0.85) !important;   /* Scale down overall */
+    transform-origin: top left !important;
+  }
+
+  /* Nodes and shapes - Purple style like your image */
+  .mermaid .node rect,
+  .mermaid .node circle,
+  .mermaid .node ellipse,
+  .mermaid .node polygon,
+  .mermaid .cluster rect {
+    fill: #1D1D2F !important;           /* Dark purple fill */
+    stroke: #594993 !important;          /* Light purple border */
+    stroke-width: 2.5px !important;
+  }
+
+  /* Text inside the diagram */
+  .mermaid text,
+  .mermaid .nodeLabel,
+  .mermaid .label,
+  .mermaid .edgeLabel,
+  .mermaid tspan {
+    fill: #E0E7FF !important;            /* Light purple-white text */
+    color: #E0E7FF !important;
+    stroke: none !important;
+    font-size: 13px !important;
+  }
+
+  /* Edges / arrows */
+  .mermaid .edgePath path {
+    stroke: #D1D2D3 !important;
+    stroke-width: 2px !important;
+  }
+
+  /* Additional safety rules */
+  .mermaid .node .label {
+    fill: #E0E7FF !important;
+  }
+
+  .mermaid svg > rect {
+    fill: #0D1117 !important;
+  }
+}
+
+@page {
+  background: #0D1117;
+}

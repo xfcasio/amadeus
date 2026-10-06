@@ -46,10 +46,10 @@ print_events = false
 render_timer = false
 
 [font]
-size = 6
+size = 8.5
 
 [font.bold]
-family = "Terminus"
+family = "Iosevka Term"
 style = "Bold"
 
 [font.glyph_offset]
@@ -57,12 +57,12 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Terminus"
-style = "Italic"
+family = "Iosevka Term"
+style = "Bold Italic"
 
 [font.normal]
-family = "Terminus"
-style = "Regular"
+family = "Iosevka Term"
+style = "Bold"
 
 [font.offset]
 x = 0

@@ -1,0 +1,12 @@
+/* Change code block font and inline code in preview mode */
+.markdown-preview-view code, 
+.markdown-preview-view pre>code {
+    font-family: 'Iosevka', monospace !important;
+}
+
+/* Center Mermaid diagrams in Obsidian */
+.markdown-rendered .mermaid,
+.markdown-preview-view .mermaid {
+  display: flex;
+  justify-content: center;
+}

@@ -77,7 +77,7 @@ function fish_prompt
     set -l second_bg (set_color -b '#12171d')
     set -l second_fg (set_color '#DF5B61')
     
-    echo -n $prompt_bg$prompt_fg' skin crawler '$second_bg$second_fg' '
+    echo -n $prompt_bg$prompt_fg' 戦え '$second_bg$second_fg' '
     echo -n (prompt_pwd)
     echo -n ' '$reset
     
