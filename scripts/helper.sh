@@ -35,6 +35,11 @@ dots-install::neovim() {
   ln -fs "$AMADEUS_DIR/modules/nvim" "/home/$USER/.config/"
 }
 
+dots-install::emacs() {
+  echo "* creating emacs symbolic link"
+  ln -fs "$AMADEUS_DIR/modules/emacs" "/home/$USER/.emacs.d/"
+}
+
 dots-install::zsh() {
   echo "* creating zshrc symbolic link"
   ln -fs "$AMADEUS_DIR/modules/zshrc" "/home/$USER/.zshrc"

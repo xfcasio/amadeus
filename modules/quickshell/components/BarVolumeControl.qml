@@ -113,7 +113,7 @@ Rectangle {
       width: 8
       height: 46
       color: Colors.volumeBarBackground
-      radius: 1
+      radius: 0 // 1
 
       Rectangle {
         anchors.bottom: parent.bottom
@@ -123,7 +123,7 @@ Rectangle {
           let len = muted ? 1 : parent.height * volume;
           return (len > 42) ? 42 : len;
         }
-        radius: 1
+        radius: 0 // 1
         gradient: Gradient {
           orientation: Gradient.Vertical
           GradientStop { position: 0; color: Colors.volumeGradientStart }

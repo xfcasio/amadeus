@@ -18,7 +18,7 @@ Rectangle {
   Layout.preferredHeight: columnLayout.implicitHeight + 12
   color: "transparent"
 
-  property real innerModulesRadius: 3
+  property real innerModulesRadius: 0 // 3
 
   // System info properties
   property real cpuUsage: 0.3
@@ -92,8 +92,8 @@ Rectangle {
     // CPU and RAM indicators
     Rectangle {
       Layout.alignment: Qt.AlignHCenter
-      width: 30
-      height: 32
+      width: 28 // 30
+      height: 30 // 32
       radius: innerModulesRadius
 
       color: (hoverHandler.hovered) ? Colors.moduleBackgroundHover : Colors.moduleBackground
@@ -112,7 +112,7 @@ Rectangle {
 
         // radial indicator
         Components.MultiRingIndicator {
-          size: 24
+          size: 20
           backgroundColor: Colors.indicatorBackground
           rings: [
             { value: ramUsage, color: Colors.ramIndicator, thickness: 3, spacing: 1.2 },

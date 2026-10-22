@@ -24,7 +24,7 @@ Rectangle {
   HoverHandler { id: hoverHandler }
 
   border.width: 1
-  border.color: (hoverHandler.hovered && !playing) ? Colors.playerBorderHover : Colors.moduleBackground
+  border.color: (hoverHandler.hovered && !playing) ? Colors.playerBorderHover : Colors.moduleBorder
 
   Behavior on border.color {
     ColorAnimation { duration: 200 }

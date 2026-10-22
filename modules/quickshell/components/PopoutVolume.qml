@@ -120,7 +120,7 @@ Scope {
       Rectangle {
         id: mainRect
         anchors.fill: parent
-        radius: 4
+        radius: 0 // 4
         color: Colors.popoutBackground
 
         border.width: 3
@@ -211,10 +211,10 @@ Scope {
             color: Colors.volumeBarBackground
             Layout.fillWidth: true
             implicitHeight: 10
-            radius: 2
+            radius: 0 // 2
 
             Rectangle {
-              radius: 2
+              radius: 0 // 2
               anchors {
                 left: parent.left
                 top: parent.top

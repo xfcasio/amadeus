@@ -49,7 +49,7 @@ Scope {
     Rectangle {
       anchors.fill: parent
       color: Colors.barBackground
-      radius: 4
+      radius: 0 // 4
 
       border.width: 2
       border.color: Colors.barBorder

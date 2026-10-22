@@ -39,6 +39,7 @@ $DEBUG \
   dots-install::fish                    # install fish configuration to ~/.config/fish/config.fish
   dots-install::zellij                  # install zellij configuration to ~/.config/zellij/config.kdl
   dots-install::neovim                  # install neovim configuration
+  dots-install::emacs                   # install emacs configuration
   dots-install::rofi $ROFI_BANNER       # install rofi configuration
   dots-install::alacritty               # install alacritty configuration
 #  dots-install::kitty                  # install kitty configuration

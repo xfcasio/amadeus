@@ -18,7 +18,7 @@ Rectangle {
   anchors.horizontalCenter: parent.horizontalCenter
   implicitHeight: childrenRect.height + 34
   width: 24
-  radius: 2
+  radius: 0 // 2
   color: (hoverHandler.hovered) ? Colors.workspaceBackgroundHover : Colors.moduleBackground
 
   HoverHandler { id: hoverHandler }
@@ -35,7 +35,7 @@ Rectangle {
     spacing: 3
 
     ColumnLayout {
-      spacing: 3
+      spacing: 4
 
       Repeater {
         model: Hyprland.workspaces
@@ -47,7 +47,7 @@ Rectangle {
           width: 4
           Layout.preferredHeight: modelData.active ? 36 : 12
           Layout.alignment: Qt.AlignHCenter
-          radius: 1
+          radius: 0 // 1
 
           color: modelData.active
             ? Colors.workspaceActive

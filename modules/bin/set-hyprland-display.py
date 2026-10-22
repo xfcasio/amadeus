@@ -34,7 +34,7 @@ hdmi_to_laptop_map = {
     },
 
     "./modules/alacritty.toml": {
-        "size = 6\n": "size = 12\n",
+        "size = 8.5\n": "size = 11\n",
         "family = \"lemon\"\n": "family = \"Terminus\"\n"
     }
 }

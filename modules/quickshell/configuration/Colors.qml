@@ -7,7 +7,7 @@ QtObject {
     
     readonly property color moduleBackground: "#111A1F"
     readonly property color moduleBackgroundHover: "#1178B892"
-    readonly property color moduleBorder: "#171F24"
+    readonly property color moduleBorder: "#282F35"
     readonly property color moduleBorderHover: "#7778B892"
     
     readonly property color cpuIndicator: "#DF5B61"
@@ -50,7 +50,7 @@ QtObject {
     // Power button colors
     readonly property color powerBackground: "#1D1A20"
     readonly property color powerBackgroundHover: "#28DF5B61"
-    readonly property color powerBorder: "#171F24"
+    readonly property color powerBorder: "#2b2024"
     readonly property color powerBorderHover: "#77DF5B61"
     
     // Battery colors

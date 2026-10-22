@@ -18,7 +18,7 @@ Rectangle {
   Layout.bottomMargin: 2//2
   width: 26//32
   height: 26//32
-  radius: innerModulesRadius
+  radius: 0
   color: Colors.barBackground
   clip: true
 
@@ -35,7 +35,7 @@ Rectangle {
       maskSource: Rectangle {
         width: 20
         height: 18
-        radius: 8
+        radius: 0 // 8
       }
     }
   }

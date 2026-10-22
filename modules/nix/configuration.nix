@@ -22,7 +22,7 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "video" "audio" "networkmanager" ];
     initialPassword = "toji";
-    shell = pkgs.zsh;  # Set zsh as default shell
+    shell = pkgs.fish;
   };
 
   home-manager = {
@@ -33,7 +33,7 @@
   };
 
   # Shells
-  programs.zsh.enable = true;
+  programs.fish.enable = true;
 
   # Doas
   security.doas.enable = true;
@@ -53,27 +53,15 @@
     curl
     asusctl
     supergfxctl
-    zsh
-    oh-my-zsh
+    fish
     grim
     swappy
-    nushell
     hyprland
     hyprlandPlugins.borders-plus-plus
     neofetch
     alacritty
     wlsunset
     pulseaudio
-
-    glib
-    gobject-introspection
-
-    (python3.withPackages (ps: with ps; [
-      pygobject3
-      psutil
-      pulsectl
-      inputs.fabric-python.packages.${pkgs.system}.default
-    ]))
   ];
 
   # Enable asusctl and supergfxctl services

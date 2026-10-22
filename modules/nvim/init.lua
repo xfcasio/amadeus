@@ -138,6 +138,13 @@ vim.lsp.config('ols', {
 })
 vim.lsp.enable('ols')
 
+vim.lsp.config('nixd', {
+  cmd = { "nixd" },
+  filetypes = { "nix" },
+  settings = {}
+})
+vim.lsp.enable('nixd')
+
 -- Diagnostic configuration (unchanged)
 vim.diagnostic.config({
   severity_sort = true,
