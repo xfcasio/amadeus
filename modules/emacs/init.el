@@ -122,7 +122,7 @@
 (defun my/ml-vc ()
   (when vc-mode
     (concat (my/ml-space my/ml-gap-px)
-            (my/ml-split 'my/ml-git ""
+            (my/ml-split 'my/ml-git ""
                          (string-trim (substring-no-properties vc-mode))
                          (mode-line-window-selected-p)
                          "#020D11"))))

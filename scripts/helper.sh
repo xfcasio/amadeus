@@ -37,7 +37,12 @@ dots-install::neovim() {
 
 dots-install::emacs() {
   echo "* creating emacs symbolic link"
-  ln -fs "$AMADEUS_DIR/modules/emacs" "/home/$USER/.emacs.d/"
+  mkdir -p "/home/$USER/.emacs.d"
+  ln -fs "$AMADEUS_DIR/modules/emacs/init.el" "/home/$USER/.emacs.d"
+  ln -fs "$AMADEUS_DIR/modules/emacs/banner.jpg" "/home/$USER/.emacs.d"
+
+  echo "└ installing emacs packages"
+  emacs --batch -l "$AMADEUS_DIR/modules/emacs/install-packages.el"
 }
 
 dots-install::zsh() {
