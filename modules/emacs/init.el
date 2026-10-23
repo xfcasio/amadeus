@@ -228,6 +228,10 @@
 (global-set-key (kbd "C-S-<tab>") #'next-buffer)
 (global-set-key (kbd "C-S-<iso-lefttab>") #'next-buffer)  ; how X11/Wayland often report C-S-Tab
 
+;; next-buffer / previous-buffer skip these
+(setq switch-to-prev-buffer-skip
+      (lambda (_window buffer _bury-or-kill)
+        (member (buffer-name buffer) '("*Warnings*" "*Messages*" "*scratch*"))))
 
 
 ;; Relative line numbers
@@ -332,6 +336,15 @@
 (define-key evil-visual-state-map (kbd "S-<up>")   #'my/move-selection-up)
 (define-key evil-visual-state-map (kbd "S-<down>") #'my/move-selection-down)
 
+;; visual-mode @reg: run the macro on every selected line (same as :'<,'>normal @reg)
+(defun my/visual-macro (reg)
+  (interactive (list (read-char "@")))
+  (let ((b (line-number-at-pos (region-beginning)))
+        (e (line-number-at-pos (max (region-beginning) (1- (region-end))))))
+    (evil-exit-visual-state)
+    (evil-ex-execute (format "%d,%dnormal @%c" b e reg))))
+
+(define-key evil-visual-state-map (kbd "@") #'my/visual-macro)
 
 
 (define-key evil-normal-state-map (kbd "C-f") #'dired-jump)
@@ -341,7 +354,34 @@
 (setq-default truncate-lines t)
 (global-visual-line-mode -1)
 
+(electric-indent-mode -1)
+
+;; yes/no prompts: short answers, and RET counts as "yes"
+(setq use-short-answers t)
+(dolist (k '("RET" "<return>" "<kp-enter>"))
+  (define-key y-or-n-p-map (kbd k) #'y-or-n-p-insert-y))
+
 (setq treesit-font-lock-level 4)
+
+;; system clipboard via wl-clipboard so copied text survives focus changes
+(setq select-enable-clipboard t
+      select-enable-primary nil
+      save-interprogram-paste-before-kill t)
+
+(when (and (getenv "WAYLAND_DISPLAY") (executable-find "wl-copy"))
+  (setq interprogram-cut-function
+        (lambda (text)
+          (let ((p (make-process :name "wl-copy" :buffer nil :noquery t
+                                 :command '("wl-copy")
+                                 :connection-type 'pipe)))
+            (process-send-string p text)
+            (process-send-eof p)))
+        interprogram-paste-function
+        (lambda ()
+          (let ((s (shell-command-to-string "wl-paste -n 2>/dev/null")))
+            (unless (string-empty-p s) s)))))
+
+
 
 ;; Theme
 (deftheme rxyhn "Custom dark theme")
